@@ -1,0 +1,21 @@
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    text-anchor: end;
+}
+
+.player_line {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+}
+
+.tooltip-object {
+    stroke: grey;
+    stroke-width: 2;
+}
