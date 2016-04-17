@@ -80,7 +80,7 @@ Vis3.prototype.initVis = function() {
 
     // Line
     vis.lines = d3.svg.line()
-        .interpolate("basis")
+        .interpolate("linear")
         .x(function(d) { return vis.lineX(d.season); })
         .y(function(d) { return vis.lineY(d.tsp); });
 
@@ -97,7 +97,8 @@ Vis3.prototype.initVis = function() {
         .attr("class", "y-axis axis")
         .call(vis.lineYAxis)
         .append("text")
-        .attr("transform", "rotate(-90)")
+        .attr("transform", "translate(0," + vis.line.height + ") rotate(-90)")
+        .attr("dx", 5)
         .attr("y", 6)
         .attr("dy", ".71em")
         .text("True Shooting Percentage");
@@ -113,7 +114,8 @@ Vis3.prototype.initVis = function() {
         .attr("class", "y-axis axis")
         .call(vis.scatterYAxis)
         .append("text")
-        .attr("transform", "rotate(-90)")
+        .attr("transform", "translate(0," + vis.scatter.height + ") rotate(-90)")
+        .attr("dx", 5)
         .attr("y", 6)
         .attr("dy", ".71em")
         .text("True Shooting Percentage");
@@ -124,7 +126,7 @@ Vis3.prototype.initVis = function() {
         .enter().append("g")
         .attr("class", "player");
     player.append("path")
-        .attr("class", function(d) { return d.name.replace(/ /g, "") + " player_line"; })
+        .attr("class", function(d) { return d.name.replace(/ |'/g, "") + " player_line"; })
         .style("stroke", color)
         .attr("d", function(d) { return vis.lines(d.values); })
         .on("mouseover", mouseover)
@@ -133,7 +135,7 @@ Vis3.prototype.initVis = function() {
     // Add names to players
     player.append("text")
         .text(function(d) { return d.name; })
-        .attr("class", function(d) { return d.name.replace(/ /g, ""); })
+        .attr("class", function(d) { return d.name.replace(/ |'/g, ""); })
         .attr("x", vis.line.width)
         .attr("y", function(d) { return vis.lineY(d.values[d.values.length - 1].tsp); })
         .attr("dx", 6)
@@ -210,18 +212,17 @@ Vis3.prototype.wrangleData = function() {
 Vis3.prototype.updateVis = function() {
     var vis = this;
 
-    console.log(vis.displayData);
+    vis.scatterPlot.selectAll("circle").remove();
 
     var circles = vis.scatterPlot.selectAll("circle").data(vis.displayData);
-    circles.enter().append("circle")
-        .attr("class", function(d) { return d.name.replace(/ /g, ""); })
-        .on("mouseover", mouseover)
-        .on("mouseout", mouseout);
+    circles.enter().append("circle");
     circles.attr("cx", function(d) {return vis.scatterX(d.fga)})
         .attr("cy", function(d) {return vis.scatterY(d.tsp)})
         .attr("r", function(d) {return vis.scatterR(d.mp)})
-        .attr("fill", color);
-    circles.exit().remove();
+        .attr("fill", color)
+        .attr("class", function(d) { return d.name.replace(/ |'/g, ""); })
+        .on("mouseover", mouseover)
+        .on("mouseout", mouseout);
 };
 
 function color(d) {
@@ -235,7 +236,7 @@ function color(d) {
 }
 
 function mouseover(d) {
-    var selections = d3.selectAll("." + d.name.replace(/ /g, ""))[0];
+    var selections = d3.selectAll("." + d.name.replace(/ |'/g, ""))[0];
     d3.select(selections[0]).style("stroke", "red");
     d3.select(selections[1]).style("opacity", 1);
     if (selections.length > 2) {
@@ -244,7 +245,7 @@ function mouseover(d) {
 }
 
 function mouseout(d) {
-    var selections = d3.selectAll("." + d.name.replace(/ /g, ""))[0];
+    var selections = d3.selectAll("." + d.name.replace(/ |'/g, ""))[0];
     d3.select(selections[0]).style("stroke", color);
     d3.select(selections[1]).style("opacity", 0);
     if (selections.length > 2) {

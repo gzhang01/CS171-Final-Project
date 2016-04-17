@@ -5,7 +5,7 @@
     shape-rendering: crispEdges;
 }
 
-.axis text {
+.x-axis text {
     text-anchor: end;
 }
 
