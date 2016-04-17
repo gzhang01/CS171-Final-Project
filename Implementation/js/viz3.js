@@ -173,6 +173,7 @@ Vis3.prototype.initVis = function() {
             d3.select(this).select("text")
                 .attr("class", "select")
                 .style("stroke", "black");
+            vis.wrangleData();
         });
 
     // Set most recent year as default active
@@ -234,6 +235,7 @@ Vis3.prototype.updateVis = function() {
         .attr("cy", function(d) {return vis.scatterY(d.tsp)})
         .attr("r", function(d) {return vis.scatterR(d.mp)})
         .attr("fill", color);
+    circles.exit().remove();
 };
 
 function color(d) {
