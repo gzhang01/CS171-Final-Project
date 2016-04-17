@@ -6,8 +6,7 @@ Vis3 = function(_parentElement, _data) {
     this.parentElement = _parentElement;
     this.data = _data;
     this.displayData = [];
-
-    console.log(this.data);
+    this.searchableData = {};
 
     this.initVis();
 };
@@ -19,12 +18,12 @@ Vis3.prototype.initVis = function() {
     var vis = this;
 
     vis.margin = {top: 40, right: 40, bottom: 60, left: 60};
-    vis.width = 960 - vis.margin.left - vis.margin.right;
+    vis.width = 1150 - vis.margin.left - vis.margin.right;
     vis.height = 500 - vis.margin.top - vis.margin.bottom;
 
     // Height and width for two graphs
-    vis.line = {width: ~~(vis.width * 0.5), height: vis.height};
-    vis.scatter = {width: ~~(vis.width * 0.5), height: vis.height};
+    vis.line = {width: ~~(vis.width * 0.45), height: vis.height};
+    vis.scatter = {width: ~~(vis.width * 0.4), height: vis.height};
 
     // SVG drawing area
     vis.svg = d3.select("#" + vis.parentElement).append("svg")
@@ -38,11 +37,15 @@ Vis3.prototype.initVis = function() {
     vis.scatterPlot = vis.svg.append("g")
         .attr("transform", "translate(" + (vis.width - vis.scatter.width) + ",0)");
 
-    // Get range of seasons to graph
+    // Get range of seasons, shots, and minutes played for graph
     var years = [];
+    var shots = [];
+    var minutes = [];
     this.data.forEach(function(d) {
         d.values.forEach(function(v) {
             years.push(v.season);
+            shots.push(v.fga);
+            minutes.push(v.mp);
         })
     });
     years = years.sort().filter(function(v, i, a) {
@@ -59,10 +62,21 @@ Vis3.prototype.initVis = function() {
             d3.max(vis.data, function(d) { return d3.max(d.values, function(v) {return v.tsp}) })
         ])
         .range([vis.line.height, 0]);
+    vis.scatterX = d3.scale.linear()
+        .domain([0, d3.max(shots) + 1])
+        .range([0, vis.scatter.width]);
+    vis.scatterY = d3.scale.linear()
+        .domain(vis.lineY.domain())
+        .range([vis.scatter.height, 0]);
+    vis.scatterR = d3.scale.linear()
+        .domain(d3.extent(minutes))
+        .range([5, 20]);
 
     // Axes
     vis.lineXAxis = d3.svg.axis().scale(vis.lineX).orient("bottom");
     vis.lineYAxis = d3.svg.axis().scale(vis.lineY).orient("left");
+    vis.scatterXAxis = d3.svg.axis().scale(vis.scatterX).orient("bottom");
+    vis.scatterYAxis = d3.svg.axis().scale(vis.scatterY).orient("left");
 
     // Line
     vis.lines = d3.svg.line()
@@ -89,7 +103,20 @@ Vis3.prototype.initVis = function() {
         .text("True Shooting Percentage");
     vis.scatterPlot.append("g")
         .attr("class", "x-axis axis")
-        .attr("transform", "translate(0," + vis.line.height + ")");
+        .attr("transform", "translate(0," + vis.line.height + ")")
+        .call(vis.scatterXAxis)
+        .append("text")
+        .attr("transform", "translate(" + vis.scatter.width + ",0)")
+        .attr("dy", -5)
+        .text("Shots / 36 Min");
+    vis.scatterPlot.append("g")
+        .attr("class", "y-axis axis")
+        .call(vis.scatterYAxis)
+        .append("text")
+        .attr("transform", "rotate(-90)")
+        .attr("y", 6)
+        .attr("dy", ".71em")
+        .text("True Shooting Percentage");
 
     // Add lines
     var player = vis.lineChart.selectAll(".player")
@@ -98,16 +125,26 @@ Vis3.prototype.initVis = function() {
         .attr("class", "player");
     player.append("path")
         .attr("class", "player_line")
-        .style("stroke", strokeColor)
+        .style("stroke", color)
         .attr("d", function(d) { return vis.lines(d.values); })
-    .on("mouseover", function(d) {
-        d3.select("#" + d.name.replace(/ /g, "")).style("opacity", 1);
-        d3.select(this).style("stroke", "red");
-    })
-    .on("mouseout", function(d) {
-        d3.select("#" + d.name.replace(/ /g, "")).style("opacity", 0);
-        d3.select(this).style("stroke", strokeColor(d));
-    });
+        .on("mouseover", function(d) {
+            d3.select("#" + d.name.replace(/ /g, "")).style("opacity", 1);
+            d3.select(this).style("stroke", "red");
+            var selection = vis.searchableData[d.name];
+            if (selection) {
+                vis.scatterPlot.append("circle")
+                    .attr("id", "viewed")
+                    .attr("cx", function() {return vis.scatterX(selection.fga)})
+                    .attr("cy", function() {return vis.scatterY(selection.tsp)})
+                    .attr("r", function() {return vis.scatterR(selection.mp)})
+                    .attr("fill", "red");
+            }
+        })
+        .on("mouseout", function(d) {
+            d3.select("#" + d.name.replace(/ /g, "")).style("opacity", 0);
+            d3.select(this).style("stroke", color);
+            d3.select("#viewed").remove();
+        });
 
     // Add names to players
     player.append("text")
@@ -121,7 +158,6 @@ Vis3.prototype.initVis = function() {
         .style("opacity", 0);
 
     // Make year on line chart selectable
-    console.log(d3.select(".x-axis").selectAll(".tick"));
     d3.select(".x-axis")
         .selectAll(".tick")
         .on("mouseover", function(d) {
@@ -139,14 +175,50 @@ Vis3.prototype.initVis = function() {
                 .style("stroke", "black");
         });
 
+    // Set most recent year as default active
+    d3.select(".x-axis").selectAll("text")[0].forEach(function(d) {
+        if (d.__data__ == years[years.length - 1]) {
+            d3.select(d).attr("class", "select").style("stroke", "black");
+        }
+    });
+
     vis.wrangleData();
 
 };
 
 Vis3.prototype.wrangleData = function() {
     var vis = this;
+    var season = d3.select(".select").text();
+    vis.displayData = [];
+    vis.searchableData = {};
 
-    vis.displayData = vis.data;
+    // Extract data for scatterplot
+    vis.data.forEach(function(d) {
+        d.values.forEach(function(v) {
+            if (v.season == season) {
+                var datum = Object.assign({}, v);
+                datum.name = d.name;
+                vis.displayData.push(datum);
+                vis.searchableData[d.name] = datum;
+            }
+        })
+    });
+
+    //// Sort data so smaller circles on top
+    //vis.displayData.sort(function(a, b) {
+    //    return b.mp - a.mp;
+    //});
+    //
+    //// Put average and Curry last (on top)
+    //var avg, curry;
+    //vis.displayData.forEach(function(d) {
+    //    if (d.name == "Average") {
+    //        avg = vis.displayData.pop(d);
+    //    } else if (d.name == "Stephen Curry") {
+    //        curry = vis.displayData.pop(d);
+    //    }
+    //})
+    //vis.displayData.push(avg); vis.displayData.push(curry);
 
     vis.updateVis();
 };
@@ -154,10 +226,17 @@ Vis3.prototype.wrangleData = function() {
 Vis3.prototype.updateVis = function() {
     var vis = this;
 
+    console.log(vis.displayData);
 
+    var circles = vis.scatterPlot.selectAll("circle").data(vis.displayData);
+    circles.enter().append("circle");
+    circles.attr("cx", function(d) {return vis.scatterX(d.fga)})
+        .attr("cy", function(d) {return vis.scatterY(d.tsp)})
+        .attr("r", function(d) {return vis.scatterR(d.mp)})
+        .attr("fill", color);
 };
 
-function strokeColor(d) {
+function color(d) {
     if (d.name == "Stephen Curry") {
         return "orange";
     } else if (d.name == "Average") {
