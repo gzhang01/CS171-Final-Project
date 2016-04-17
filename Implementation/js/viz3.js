@@ -215,12 +215,12 @@ Vis3.prototype.updateVis = function() {
     var circles = vis.scatterPlot.selectAll("circle").data(vis.displayData);
     circles.enter().append("circle")
         .attr("class", function(d) { return d.name.replace(/ /g, ""); })
-        .attr("fill", color)
         .on("mouseover", mouseover)
         .on("mouseout", mouseout);
     circles.attr("cx", function(d) {return vis.scatterX(d.fga)})
         .attr("cy", function(d) {return vis.scatterY(d.tsp)})
-        .attr("r", function(d) {return vis.scatterR(d.mp)});
+        .attr("r", function(d) {return vis.scatterR(d.mp)})
+        .attr("fill", color);
     circles.exit().remove();
 };
 
