@@ -58,7 +58,7 @@ function viz3LoadData() {
             avgPlayer.values.push({
                 season: season,
                 mp: ~~(total[season].mp / total[season].count),
-                fga: ~~(total[season].fga / total[season].count),
+                fga: total[season].fga / total[season].count,
                 tsp: total[season].tsp / total[season].count
             })
         });

@@ -124,33 +124,16 @@ Vis3.prototype.initVis = function() {
         .enter().append("g")
         .attr("class", "player");
     player.append("path")
-        .attr("class", "player_line")
+        .attr("class", function(d) { return d.name.replace(/ /g, "") + " player_line"; })
         .style("stroke", color)
         .attr("d", function(d) { return vis.lines(d.values); })
-        .on("mouseover", function(d) {
-            d3.select("#" + d.name.replace(/ /g, "")).style("opacity", 1);
-            d3.select(this).style("stroke", "red");
-            var selection = vis.searchableData[d.name];
-            if (selection) {
-                vis.scatterPlot.append("circle")
-                    .attr("id", "viewed")
-                    .attr("cx", function() {return vis.scatterX(selection.fga)})
-                    .attr("cy", function() {return vis.scatterY(selection.tsp)})
-                    .attr("r", function() {return vis.scatterR(selection.mp)})
-                    .attr("fill", "red");
-            }
-        })
-        .on("mouseout", function(d) {
-            d3.select("#" + d.name.replace(/ /g, "")).style("opacity", 0);
-            d3.select(this).style("stroke", color);
-            d3.select("#viewed").remove();
-        });
+        .on("mouseover", mouseover)
+        .on("mouseout", mouseout);
 
     // Add names to players
     player.append("text")
         .text(function(d) { return d.name; })
-        .attr("class", "name")
-        .attr("id", function(d) { return d.name.replace(/ /g, ""); })
+        .attr("class", function(d) { return d.name.replace(/ /g, ""); })
         .attr("x", vis.line.width)
         .attr("y", function(d) { return vis.lineY(d.values[d.values.length - 1].tsp); })
         .attr("dx", 6)
@@ -230,11 +213,14 @@ Vis3.prototype.updateVis = function() {
     console.log(vis.displayData);
 
     var circles = vis.scatterPlot.selectAll("circle").data(vis.displayData);
-    circles.enter().append("circle");
+    circles.enter().append("circle")
+        .attr("class", function(d) { return d.name.replace(/ /g, ""); })
+        .attr("fill", color)
+        .on("mouseover", mouseover)
+        .on("mouseout", mouseout);
     circles.attr("cx", function(d) {return vis.scatterX(d.fga)})
         .attr("cy", function(d) {return vis.scatterY(d.tsp)})
-        .attr("r", function(d) {return vis.scatterR(d.mp)})
-        .attr("fill", color);
+        .attr("r", function(d) {return vis.scatterR(d.mp)});
     circles.exit().remove();
 };
 
@@ -248,4 +234,21 @@ function color(d) {
     }
 }
 
+function mouseover(d) {
+    var selections = d3.selectAll("." + d.name.replace(/ /g, ""))[0];
+    d3.select(selections[0]).style("stroke", "red");
+    d3.select(selections[1]).style("opacity", 1);
+    if (selections.length > 2) {
+        d3.select(selections[2]).style("fill", "red");
+    }
+}
+
+function mouseout(d) {
+    var selections = d3.selectAll("." + d.name.replace(/ /g, ""))[0];
+    d3.select(selections[0]).style("stroke", color);
+    d3.select(selections[1]).style("opacity", 0);
+    if (selections.length > 2) {
+        d3.select(selections[2]).style("fill", color);
+    }
+}
 
