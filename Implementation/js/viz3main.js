@@ -30,11 +30,16 @@ function viz3LoadData() {
 
         // Constructing data set usable for line graph
         keys = d3.keys(tmpData);
+        var curry;
         keys.forEach(function(d) {
-            viz3Data.push({
-                name: d,
-                values: tmpData[d]
-            });
+            if (d == "Stephen Curry") {
+                curry = {name: d, values: tmpData[d]};
+            } else {
+                viz3Data.push({
+                    name: d,
+                    values: tmpData[d]
+                });
+            }
         });
 
         // Construct total without Curry data set
@@ -63,6 +68,7 @@ function viz3LoadData() {
             })
         });
         viz3Data.push(avgPlayer);
+        viz3Data.push(curry);
 
         viz3CreateVis();
     })
