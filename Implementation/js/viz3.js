@@ -6,7 +6,6 @@ Vis3 = function(_parentElement, _data) {
     this.parentElement = _parentElement;
     this.data = _data;
     this.displayData = [];
-    this.searchableData = {};
 
     this.initVis();
 };
@@ -147,9 +146,11 @@ Vis3.prototype.initVis = function() {
         .selectAll(".tick")
         .on("mouseover", function(d) {
             d3.select(this).style("stroke", "red");
+            vis.showDotOnLine(d);
         })
         .on("mouseout", function(d) {
             d3.select(this).style("stroke", null);
+            vis.removeDotFromLine();
         })
         .on("click", function(d) {
             d3.select(".x-axis").selectAll(".select")
@@ -174,37 +175,19 @@ Vis3.prototype.initVis = function() {
 
 Vis3.prototype.wrangleData = function() {
     var vis = this;
-    var season = d3.select(".select").text();
+    vis.season = d3.select(".select").text();
     vis.displayData = [];
-    vis.searchableData = {};
 
     // Extract data for scatterplot
     vis.data.forEach(function(d) {
         d.values.forEach(function(v) {
-            if (v.season == season) {
+            if (v.season == vis.season) {
                 var datum = Object.assign({}, v);
                 datum.name = d.name;
                 vis.displayData.push(datum);
-                vis.searchableData[d.name] = datum;
             }
         })
     });
-
-    //// Sort data so smaller circles on top
-    //vis.displayData.sort(function(a, b) {
-    //    return b.mp - a.mp;
-    //});
-    //
-    //// Put average and Curry last (on top)
-    //var avg, curry;
-    //vis.displayData.forEach(function(d) {
-    //    if (d.name == "Average") {
-    //        avg = vis.displayData.pop(d);
-    //    } else if (d.name == "Stephen Curry") {
-    //        curry = vis.displayData.pop(d);
-    //    }
-    //})
-    //vis.displayData.push(avg); vis.displayData.push(curry);
 
     vis.updateVis();
 };
@@ -212,17 +195,58 @@ Vis3.prototype.wrangleData = function() {
 Vis3.prototype.updateVis = function() {
     var vis = this;
 
+    // Remove all original circles
     vis.scatterPlot.selectAll("circle").remove();
 
+    // Add circles at correct position on line graph
+    var xStart = vis.lineX(vis.season) - (vis.width - vis.scatter.width);
+    console.log(xStart);
     var circles = vis.scatterPlot.selectAll("circle").data(vis.displayData);
-    circles.enter().append("circle");
-    circles.attr("cx", function(d) {return vis.scatterX(d.fga)})
+    circles.enter().append("circle")
+        .attr("cx", xStart)
         .attr("cy", function(d) {return vis.scatterY(d.tsp)})
-        .attr("r", function(d) {return vis.scatterR(d.mp)})
-        .attr("fill", color)
+        .attr("r", 5)
         .attr("class", function(d) { return d.name.replace(/ |'/g, ""); })
         .on("mouseover", mouseover)
-        .on("mouseout", mouseout);
+        .on("mouseout", mouseout)
+        .attr("fill", color)
+        .attr("stroke", strokecolor);
+
+    // Transition to proper place on scatterplot
+    var duration = ~~(2 * (-158 - xStart) + 1500);
+    circles.transition().duration(duration).delay(function(d, i) { return 40 * i; })
+        .attr("cx", function(d) {return vis.scatterX(d.fga)})
+        .attr("cy", function(d) {return vis.scatterY(d.tsp)})
+        .attr("r", function(d) {return vis.scatterR(d.mp)});
+};
+
+Vis3.prototype.showDotOnLine = function(season) {
+    var vis = this;
+    var data = [];
+
+    // Extract data for scatterplot
+    vis.data.forEach(function(d) {
+        d.values.forEach(function(v) {
+            if (v.season == season) {
+                var datum = Object.assign({}, v);
+                datum.name = d.name;
+                data.push(datum);
+            }
+        })
+    });
+
+    var circles = vis.lineChart.selectAll("circle").data(data);
+    circles.enter().append("circle")
+        .attr("cx", vis.lineX(season))
+        .attr("cy", function(d) {return vis.lineY(d.tsp)})
+        .attr("r", 5)
+        .attr("class", "lineDot")
+        .attr("fill", color)
+        .attr("stroke", strokecolor);
+};
+
+Vis3.prototype.removeDotFromLine = function() {
+    d3.selectAll(".lineDot").remove();
 };
 
 function color(d) {
@@ -235,12 +259,24 @@ function color(d) {
     }
 }
 
+function strokecolor(d) {
+    if (d.name == "Stephen Curry") {
+        return "orange";
+    } else if (d.name == "Average") {
+        return "green";
+    } else {
+        return "white";
+    }
+}
+
 function mouseover(d) {
     var selections = d3.selectAll("." + d.name.replace(/ |'/g, ""))[0];
     d3.select(selections[0]).style("stroke", "red");
     d3.select(selections[1]).style("opacity", 1);
     if (selections.length > 2) {
-        d3.select(selections[2]).style("fill", "red");
+        d3.select(selections[2])
+            .style("fill", "red")
+            .attr("stroke", "red");
     }
 }
 
@@ -249,7 +285,9 @@ function mouseout(d) {
     d3.select(selections[0]).style("stroke", color);
     d3.select(selections[1]).style("opacity", 0);
     if (selections.length > 2) {
-        d3.select(selections[2]).style("fill", color);
+        d3.select(selections[2])
+            .style("fill", color)
+            .attr("stroke", strokecolor);
     }
 }
 
