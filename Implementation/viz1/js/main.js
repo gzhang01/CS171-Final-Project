@@ -4,7 +4,7 @@
 
 dataOne = [];
 colorScale = d3.scale.category10();
-
+format = d3.time.format("%Y");
 
 loadData();
 
@@ -17,15 +17,15 @@ function loadData() {
             d['3PA'] = +d['3PA'];
             d.FG = +d.FG;
             d.FGA = +d.FGA;
-            d['2P'] = +d['2P']
-            d['2PA'] = +d['2PA']
+            d['2P'] = +d['2P'];
+            d['2PA'] = +d['2PA'];
+            d.Year = format.parse(d.Year);
         });
 
         dataOne = csv;
 
         colorScale.domain(d3.keys(dataOne[0]).filter(function(d) {
             return (["2P","2PA","3P","3PA","FG","FGA"].indexOf(d) > -1)}));
-
 
         createVis();
     });

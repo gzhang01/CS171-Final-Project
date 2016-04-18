@@ -59,12 +59,17 @@ visOne.prototype.initVis = function() {
 
     var dataCategories = colorScale.domain();
 
+    console.log(vis.data);
+
     // Rearrange data to include relevant metrics only
     vis.cleanData = dataCategories.map(function(name) {
         return {
             name: name,
             values: vis.data.map(function(d) {
-                return {Season: d.Season, Fg: d[name]}
+                return {
+                    Year: d.Year,
+                    Season: d.Season,
+                    Fg: d[name]}
             })
         };
     })
@@ -152,5 +157,4 @@ visOne.prototype.updateVis = function() {
         .attr("dy", ".71em")
         .style("text-anchor", "end")
         .text("Shots");
-
 }
