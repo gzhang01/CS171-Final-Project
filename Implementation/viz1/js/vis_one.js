@@ -34,9 +34,10 @@ visOne.prototype.initVis = function() {
         .append("g")
         .attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")");
 
+    //Making x and y-axis
     vis.x = d3.scale.ordinal()
         .domain(vis.data.map(function(d) { return d.Season; }))
-        .rangeBands([vis.width, 0], .1);
+        .rangeBands([vis.width, 0],1,0);
 
     vis.y = d3.scale.linear()
         .range([vis.height, 0]);
@@ -129,11 +130,27 @@ visOne.prototype.updateVis = function() {
     // Call axis functions with the new domain
     vis.svg.select(".x-axis").call(vis.xAxis)
         .selectAll("text")
-        .attr("y", 0)
-        .attr("x", 9)
+        .attr("y", 10)
+        .attr("x", 0)
         .attr("dy", ".35em")
-        .attr("transform", "rotate(90)")
-        .style("text-anchor", "start");;
-    vis.svg.select(".y-axis").call(vis.yAxis);
+        .attr("transform", "rotate(45)")
+        .style("text-anchor", "start");
+
+    vis.svg.select(".x-axis")
+        .append("text")
+        .attr("x", vis.width)
+        .attr("y", -15)
+        .attr("dy", ".71em")
+        .style("text-anchor", "end")
+        .text("Season");
+
+
+    vis.svg.select(".y-axis").call(vis.yAxis)
+        .append("text")
+        .attr("transform", "rotate(-90)")
+        .attr("y", 6)
+        .attr("dy", ".71em")
+        .style("text-anchor", "end")
+        .text("Shots");
 
 }
