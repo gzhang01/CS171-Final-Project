@@ -7,12 +7,24 @@ var vis2;
 var shotData = [];
 var finalData = [];
 
+var player = 'curry_df';
+
 // Start by loading data
-vis2LoadData();
+vis2LoadData(player);
+
+function filterData(){
+  var selectBox = document.getElementById("area-category");
+  var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+
+  player = selectedValue;
+  vis2LoadData(player);
+  //vis2LoadData(selectedValue);
+  console.log(selectedValue);
+}
 
 // Loads data
-function vis2LoadData() {
-  d3.csv("data/barnes_df.csv", function(error, data) {
+function vis2LoadData(player) {
+  d3.csv("data/" + player + ".csv", function(error, data) {
 
     var x = [];
     var y = [];

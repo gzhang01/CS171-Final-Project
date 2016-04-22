@@ -50,7 +50,7 @@ ShotChart.prototype.wrangleData = function() {
   var vis = this;
 
   // Currently no data wrangling/filtering needed
-  // vis.displayData = vis.data;
+   vis.displayData = vis.data;
 
   // Update the visualization
   vis.updateVis();
