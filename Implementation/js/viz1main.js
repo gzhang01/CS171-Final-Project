@@ -19,10 +19,16 @@ function loadData() {
             d.FGA = +d.FGA;
             d['2P'] = +d['2P'];
             d['2PA'] = +d['2PA'];
-            d.Year = format.parse(d.Year);
+            d.date = format.parse(d.Year);
         });
 
         dataOne = csv;
+
+        csv.sort(function(a, b) {
+            return a.date - b.date;
+        });
+
+        console.log(dataOne);
 
         colorScale.domain(d3.keys(dataOne[0]).filter(function(d) {
             return (["2P","2PA","3P","3PA","FG","FGA"].indexOf(d) > -1)}));
