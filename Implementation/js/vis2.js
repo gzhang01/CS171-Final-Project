@@ -1,11 +1,8 @@
-// Contains all data
-var vis2Data = [];
-
 // Visualization
 var vis2;
 
-var shotData = [];
-var finalData = [];
+var shotData;
+var finalData;
 
 var player = 'curry_df';
 
@@ -16,16 +13,14 @@ function filterData(){
   var selectBox = document.getElementById("area-category");
   var selectedValue = selectBox.options[selectBox.selectedIndex].value;
 
-  player = selectedValue;
-  vis2LoadData(player);
-  //vis2LoadData(selectedValue);
-  console.log(selectedValue);
+  vis2LoadData(selectedValue);
 }
 
 // Loads data
 function vis2LoadData(player) {
   d3.csv("data/" + player + ".csv", function(error, data) {
 
+    shotData = [];
     var x = [];
     var y = [];
     var made = [];
@@ -59,6 +54,7 @@ function vis2LoadData(player) {
 }
 
 function calculate_z_values(shotData){
+  finalData = [];
   var reformatted = d3.nest()
       .key(function(d) {return [d.x, d.y]; })
       .rollup(function(v){return{
@@ -84,8 +80,6 @@ function calculate_z_values(shotData){
 }
 
 function vis2CreateVis() {
-  console.log(finalData);
-
-  vis2 = new ShotChart("vis-2-shot-chart", finalData);
+  vis2 = new ShotChart("vis-2-shot-chart", finalData, player);
 }
 

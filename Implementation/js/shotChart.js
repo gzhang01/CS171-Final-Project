@@ -23,7 +23,7 @@ ShotChart.prototype.initVis = function() {
       // set svg width
       width: 600,
       // set title
-      title: 'Barnes Shot chart',
+      title: 'shot chart',
       hexagonFillValue: function(d) {  return d.z; },
       heatScale: d3.scale.quantile()
           .domain([-2.5, 2.5])
