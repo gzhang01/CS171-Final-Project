@@ -46,8 +46,8 @@ visOne.prototype.initVis = function() {
     vis.margin = { top: 30, right: 12, bottom: 50, left: 30 };
 
     // Width and height for each svg
-    vis.width = 600 - vis.margin.left - vis.margin.right;
-    vis.height = 300 - vis.margin.top - vis.margin.bottom;
+    vis.width = 400 - vis.margin.left - vis.margin.right;
+    vis.height = 200 - vis.margin.top - vis.margin.bottom;
 
     vis.bisect = d3.bisector(function(d) { return d.date; }).left;
 
@@ -107,7 +107,7 @@ visOne.prototype.initVis = function() {
             }).text(function(d) {
             return d.values[index].Fg;
         });
-        
+
         vis.curYear
             .attr("x", vis.x(date))
             .text(year);
