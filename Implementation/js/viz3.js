@@ -16,7 +16,7 @@ Vis3 = function(_parentElement, _data) {
 Vis3.prototype.initVis = function() {
     var vis = this;
 
-    vis.margin = {top: 40, right: 40, bottom: 60, left: 60};
+    vis.margin = {top: 50, right: 40, bottom: 60, left: 60};
     vis.width = 1150 - vis.margin.left - vis.margin.right;
     vis.height = 500 - vis.margin.top - vis.margin.bottom;
 
@@ -79,7 +79,7 @@ Vis3.prototype.initVis = function() {
 
     // Line
     vis.lines = d3.svg.line()
-        .interpolate("linear")
+        .interpolate("monotone")
         .x(function(d) { return vis.lineX(d.season); })
         .y(function(d) { return vis.lineY(d.tsp); });
 
@@ -118,6 +118,18 @@ Vis3.prototype.initVis = function() {
         .attr("y", 6)
         .attr("dy", ".71em")
         .text("True Shooting Percentage");
+
+    // Draw titles
+    vis.lineChart.append("text")
+        .attr("class", "titletext")
+        .attr("x", vis.line.width / 2)
+        .attr("y", -20)
+        .text("True Shooting Percentage (TSP) Over Time");
+    vis.scatterPlot.append("text")
+        .attr("class", "titletext")
+        .attr("x", vis.scatter.width / 2)
+        .attr("y", -20)
+        .text("2015-16 TSP vs. Shots / 36 Min");
 
     // Add lines
     var player = vis.lineChart.selectAll(".player")
@@ -195,29 +207,38 @@ Vis3.prototype.wrangleData = function() {
 Vis3.prototype.updateVis = function() {
     var vis = this;
 
-    // Remove all original circles
-    vis.scatterPlot.selectAll("circle").remove();
+    // Label original circles as old and fade
+    vis.scatterPlot.selectAll("circle")
+        .attr("class", function(d) { return d.name.replace(/ |'/g, "") + " old"; });
 
     // Add circles at correct position on line graph
     var xStart = vis.lineX(vis.season) - (vis.width - vis.scatter.width);
     console.log(xStart);
-    var circles = vis.scatterPlot.selectAll("circle").data(vis.displayData);
+    var circles = vis.scatterPlot.selectAll(".new").data(vis.displayData);
     circles.enter().append("circle")
         .attr("cx", xStart)
         .attr("cy", function(d) {return vis.scatterY(d.tsp)})
         .attr("r", 5)
-        .attr("class", function(d) { return d.name.replace(/ |'/g, ""); })
+        .attr("class", function(d) { return d.name.replace(/ |'/g, "") + " new"; })
         .on("mouseover", mouseover)
         .on("mouseout", mouseout)
         .attr("fill", color)
         .attr("stroke", strokecolor);
 
-    // Transition to proper place on scatterplot
-    var duration = ~~(2 * (-158 - xStart) + 1500);
+    // Transition new to proper place on scatterplot
+    var duration = ~~(1.8 * (-158 - xStart) + 1500);
+    vis.scatterPlot.selectAll(".old").transition().duration(duration).style("fill-opacity", 0.2);
     circles.transition().duration(duration).delay(function(d, i) { return 40 * i; })
         .attr("cx", function(d) {return vis.scatterX(d.fga)})
         .attr("cy", function(d) {return vis.scatterY(d.tsp)})
         .attr("r", function(d) {return vis.scatterR(d.mp)});
+
+    // Remove old circles
+    vis.scatterPlot.selectAll(".old").transition().delay(duration + 40 * (circles.length + 10)).remove();
+
+    // Change title of scatterplot
+    vis.scatterPlot.select(".titletext")
+        .text(vis.season + " TSP vs. Shots / 36 Min");
 };
 
 Vis3.prototype.showDotOnLine = function(season) {
@@ -260,13 +281,7 @@ function color(d) {
 }
 
 function strokecolor(d) {
-    if (d.name == "Stephen Curry") {
-        return "orange";
-    } else if (d.name == "Average") {
-        return "green";
-    } else {
-        return "white";
-    }
+    return "white";
 }
 
 function mouseover(d) {
