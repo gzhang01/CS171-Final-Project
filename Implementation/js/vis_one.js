@@ -43,7 +43,7 @@ visOne.prototype.initVis = function() {
     vis.curYear = null;
     vis.caption = null;
 
-    vis.margin = { top: 30, right: 30, bottom: 50, left: 30 };
+    vis.margin = { top: 30, right: 12, bottom: 50, left: 30 };
 
     // Width and height for each svg
     vis.width = 600 - vis.margin.left - vis.margin.right;
@@ -107,7 +107,7 @@ visOne.prototype.initVis = function() {
             }).text(function(d) {
             return d.values[index].Fg;
         });
-
+        
         vis.curYear
             .attr("x", vis.x(date))
             .text(year);
@@ -196,7 +196,7 @@ visOne.prototype.updateVis = function() {
         .style("pointer-events", "none")
         .attr("dy", 13)
         .attr("y", vis.height)
-        .attr("x", vis.width)
+        .attr("x", vis.width-15)
         .text(function(d) {
             return d.values[d.values.length - 1].date.getFullYear();
         });
@@ -210,7 +210,6 @@ visOne.prototype.updateVis = function() {
         .attr("x", 0)
         .text(function(d) {
             return d.values[0].date.getFullYear();
-            return d.values[d.values.length - 1].date.getFullYear();
         });
 
     // hide for now
