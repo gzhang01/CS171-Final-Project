@@ -16,8 +16,8 @@ Vis3 = function(_parentElement, _data) {
 Vis3.prototype.initVis = function() {
     var vis = this;
 
-    vis.margin = {top: 50, right: 40, bottom: 60, left: 60};
-    vis.width = 800 - vis.margin.left - vis.margin.right;
+    vis.margin = {top: 40, right: 10, bottom: 60, left: 50};
+    vis.width = 750 - vis.margin.left - vis.margin.right;
     vis.height = 350 - vis.margin.top - vis.margin.bottom;
 
     // Height and width for two graphs
@@ -190,6 +190,9 @@ Vis3.prototype.initVis = function() {
         }
     });
 
+    // Set average player as default active
+    vis.activePlayer = "Average";
+
     vis.wrangleData();
 
 };
@@ -231,7 +234,11 @@ Vis3.prototype.updateVis = function() {
         .on("mouseover", vis.mouseover)
         .on("mouseout", vis.mouseout)
         .attr("fill", color)
-        .attr("stroke", "white");
+        .attr("stroke", "white")
+        .on("click", function(d) {
+            vis.activePlayer = d.name;
+            vis.updateTable();
+        });
 
     // Transition new to proper place on scatterplot
     var duration = ~~(1.8 * (-158 - xStart) + 1500);
@@ -247,7 +254,31 @@ Vis3.prototype.updateVis = function() {
     // Change title of scatterplot
     vis.scatterPlot.select(".titletext")
         .text(vis.season + " TSP vs. Shots / 36 Min");
+
+    // Set table name
+    d3.select("#tableName").text(vis.season + " Season");
+    vis.activePlayer = "Average";
+    vis.updateTable();
 };
+
+Vis3.prototype.updateTable = function() {
+    var vis = this;
+
+    // Default table to Curry and Average data
+    vis.displayData.forEach(function (d) {
+        if (d.name == "Stephen Curry") {
+            $("#curryName").text(d.name);
+            $("#curryTSP").text(d.tsp.toFixed(3));
+            $("#curryShotsPer").text(d.fga.toFixed(1));
+            $("#curryMinutes").text(d.mp);
+        } else if (d.name == vis.activePlayer) {
+            $("#compareName").text(d.name);
+            $("#compareTSP").text(d.tsp.toFixed(3));
+            $("#compareShotsPer").text(d.fga.toFixed(1));
+            $("#compareMinutes").text(d.mp);
+        }
+    });
+}
 
 Vis3.prototype.showDotOnLine = function(season) {
     var vis = this;
