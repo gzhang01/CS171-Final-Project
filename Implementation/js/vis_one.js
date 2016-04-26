@@ -211,7 +211,7 @@ visOne.prototype.initVis = function() {
         }
     }
 
-    //Setting Visualization One starting table info
+    /*//Setting Visualization One starting table info
     $(document).ready(function () {
 
         vis.tableYear = vis.year;
@@ -230,7 +230,7 @@ visOne.prototype.initVis = function() {
         $('#3ptaOne').text(vis.table3fga);
         $('#2ptOne').text(vis.table2fg);
         $('#2ptaOne').text(vis.table2fga);
-    });
+    });*/
 
     vis.wrangleData();
 
