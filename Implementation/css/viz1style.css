@@ -1,4 +1,4 @@
-.vis1 {
+body {
     font: 10px sans-serif;
 }
 
@@ -29,4 +29,17 @@
 
 .background {
     fill: none;
+}
+
+.table {
+    margin-top: 80px;
+}
+
+/*
+.table-borderless tbody tr td, .table-borderless tbody tr th, .table-borderless thead tr th {
+    border: none;
+}*/
+
+td{
+    font-size: 12px;
 }

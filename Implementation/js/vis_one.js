@@ -8,8 +8,6 @@ visOne = function(_parentElement, _data) {
     this.data = _data;
     this.displayData = [];
 
-    console.log(this.data);
-
     this.initVis();
 }
 
@@ -43,7 +41,7 @@ visOne.prototype.initVis = function() {
     vis.curYear = null;
     vis.caption = null;
 
-    vis.margin = { top: 30, right: 12, bottom: 50, left: 30 };
+    vis.margin = { top: 30, right: 10, bottom: 50, left: 30 };
 
     // Width and height for each svg
     vis.width = 400 - vis.margin.left - vis.margin.right;
@@ -62,17 +60,19 @@ visOne.prototype.initVis = function() {
         .range([vis.height, 0]);
 
     /*
-    vis.xAxis = d3.svg.axis()
-        .scale(vis.x)
-        .orient("bottom");
-*/
+     vis.xAxis = d3.svg.axis()
+     .scale(vis.x)
+     .orient("bottom");
+     */
 
     vis.yAxis = d3.svg.axis()
         .scale(vis.y)
         .orient("left")
         .ticks(4)
         .outerTickSize(0)
-        .tickSubdivide(1);
+        .tickSubdivide(1)
+        .tickSize(-vis.width);
+
 
     vis.line = d3.svg.line()
         .interpolate("monotone")
@@ -89,28 +89,28 @@ visOne.prototype.initVis = function() {
     };
 
     vis.mousemove = function() {
-        var xpos = d3.mouse(this)[0];
-        var year = vis.x.invert(xpos).getFullYear();
-        var date = format.parse('' + year);
-        var index = 0;
+        vis.xpos = d3.mouse(this)[0];
+        vis.year = vis.x.invert(vis.xpos).getFullYear();
+        vis.date = format.parse('' + vis.year);
+        vis.index = 0;
 
         vis.circle
-            .attr("cx", vis.x(date))
+            .attr("cx", vis.x(vis.date))
             .attr("cy", function(d) {
-                index = vis.bisect(d.values, date, 0, d.values.length - 1);
-                return vis.y(d.values[index].Fg);
+                vis.index = vis.bisect(d.values, vis.date, 0, d.values.length - 1);
+                return vis.y(d.values[vis.index].Fg);
             });
 
-        vis.caption.attr("x", vis.x(date))
+        vis.caption.attr("x", vis.x(vis.date))
             .attr("y", function(d) {
-                return vis.y(d.values[index].Fg);
+                return vis.y(d.values[vis.index].Fg);
             }).text(function(d) {
-            return d.values[index].Fg;
+            return d.values[vis.index].Fg;
         });
 
         vis.curYear
-            .attr("x", vis.x(date))
-            .text(year);
+            .attr("x", vis.x(vis.date))
+            .text(vis.year);
         return true;
     };
 
@@ -123,6 +123,92 @@ visOne.prototype.initVis = function() {
         return true;
     };
 
+    vis.percentageDiff = function (num1, num2) {
+        if (num1 == num2) {
+            return 0 + "%";
+        }
+        else if (num1 < num2) {
+            return (((num2 - num1) / num1) * 100).toFixed(2) + "%";
+        }
+        else {
+            return -(((num1 - num2) / num2) * 100).toFixed(2) + "%";
+        }
+    }
+
+    vis.click = function (d) {
+        console.log(d);
+
+        vis.circle
+            .transition()
+            .duration(250)
+            .attr("r", 16)
+            .transition()
+            .duration(250)
+            .attr("r",4);
+
+        if (!$("#seasonOne").html()) {
+            $(document).ready(function () {
+                vis.tableYear = vis.year;
+                vis.tableSeason = vis.displayData[0].values[vis.index].Season;
+                vis.tableFg = vis.displayData[0].values[vis.index].Fg;
+                vis.tableFga = vis.displayData[1].values[vis.index].Fg;
+                vis.table3fg = vis.displayData[2].values[vis.index].Fg;
+                vis.table3fga = vis.displayData[3].values[vis.index].Fg;
+                vis.table2fg = vis.displayData[4].values[vis.index].Fg;
+                vis.table2fga = vis.displayData[5].values[vis.index].Fg;
+
+                $('#seasonOne').text(vis.tableSeason);
+                $('#fgOne').text(vis.tableFg);
+                $('#fgaOne').text(vis.tableFga);
+                $('#3ptOne').text(vis.table3fg);
+                $('#3ptaOne').text(vis.table3fga);
+                $('#2ptOne').text(vis.table2fg);
+                $('#2ptaOne').text(vis.table2fga);
+            });
+        }
+        else if(!$("#seasonTwo").html()) {
+            $(document).ready(function () {
+                $('#seasonTwo').text(vis.displayData[0].values[vis.index].Season);
+                $('#fgTwo').text(vis.displayData[0].values[vis.index].Fg);
+                $('#fgaTwo').text(vis.displayData[1].values[vis.index].Fg);
+                $('#3ptTwo').text(vis.displayData[2].values[vis.index].Fg);
+                $('#3ptaTwo').text(vis.displayData[3].values[vis.index].Fg);
+                $('#2ptTwo').text(vis.displayData[4].values[vis.index].Fg);
+                $('#2ptaTwo').text(vis.displayData[5].values[vis.index].Fg);
+            });
+
+            $(document).ready(function () {
+                $('#fgComp').text(vis.percentageDiff(vis.tableFg, vis.displayData[0].values[vis.index].Fg));
+                $('#fgaComp').text(vis.percentageDiff(vis.tableFga, vis.displayData[1].values[vis.index].Fg));
+                $('#3ptComp').text(vis.percentageDiff(vis.table3fg, vis.displayData[2].values[vis.index].Fg));
+                $('#3ptaComp').text(vis.percentageDiff(vis.table3fga, vis.displayData[3].values[vis.index].Fg));
+                $('#2ptComp').text(vis.percentageDiff(vis.table2fg, vis.displayData[4].values[vis.index].Fg));
+                $('#2ptaComp').text(vis.percentageDiff(vis.table2fga, vis.displayData[5].values[vis.index].Fg));
+            });
+        }
+        else {
+            $(document).ready(function () {
+                $("span").text("");
+            });
+
+            vis.tableYear = vis.year;
+            vis.tableSeason = vis.displayData[0].values[vis.index].Season;
+            vis.tableFg = vis.displayData[0].values[vis.index].Fg;
+            vis.tableFga = vis.displayData[1].values[vis.index].Fg;
+            vis.table3fg = vis.displayData[2].values[vis.index].Fg;
+            vis.table3fga = vis.displayData[3].values[vis.index].Fg;
+            vis.table2fg = vis.displayData[4].values[vis.index].Fg;
+            vis.table2fga = vis.displayData[5].values[vis.index].Fg;
+
+            $('#seasonOne').text(vis.tableSeason);
+            $('#fgOne').text(vis.tableFg);
+            $('#fgaOne').text(vis.tableFga);
+            $('#3ptOne').text(vis.table3fg);
+            $('#3ptaOne').text(vis.table3fga);
+            $('#2ptOne').text(vis.table2fg);
+            $('#2ptaOne').text(vis.table2fga);
+        }
+    }
 
     vis.wrangleData();
 
@@ -141,8 +227,6 @@ visOne.prototype.wrangleData = function() {
 visOne.prototype.updateVis = function() {
 
     var vis = this;
-
-    console.log(this);
 
     vis.div = d3.select("#visOne")
         .selectAll(".chart")
@@ -169,7 +253,8 @@ visOne.prototype.updateVis = function() {
         .attr("height", vis.height)
         .on("mouseover", vis.mouseover)
         .on("mousemove", vis.mousemove)
-        .on("mouseout", vis.mouseout);
+        .on("mouseout", vis.mouseout)
+        .on("click", vis.click);
 
     vis.lines = vis.g.append("g");
 
@@ -217,7 +302,7 @@ visOne.prototype.updateVis = function() {
         .attr("r", 4)
         .attr("opacity", 0)
         .style("pointer-events", "none")
-        .style("fill", function(d) { return "#FDB927"});;
+        .style("fill", function(d) { return "#FDB927"});
 
     vis.caption = vis.lines.append("text")
         .attr("class", "caption")
@@ -242,10 +327,11 @@ visOne.prototype.updateVis = function() {
         .style("text-anchor", "end")
         .text("Shots");
 
+
     /*
-    vis.g.append("g")
-        .attr("class", "x axis")
-        .attr("transform", "translate(0," + vis.height + ")")
-        .call(vis.xAxis)
-        */
+     vis.g.append("g")
+     .attr("class", "x axis")
+     .attr("transform", "translate(0," + vis.height + ")")
+     .call(vis.xAxis)
+     */
 }
