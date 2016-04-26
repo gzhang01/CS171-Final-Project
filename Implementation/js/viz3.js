@@ -117,7 +117,8 @@ Vis3.prototype.initVis = function() {
         .style("text-anchor", "end")
         .attr("dx", "-0.3em")
         .attr("dy", "0.8em")
-        .attr("transform", "rotate(-20)");
+        .attr("transform", "rotate(-20)")
+        .attr("class", "hover");
     vis.lineChart.select(".x-axis")
         .append("text")
         .attr("transform", "translate(" + vis.line.width + ",0)")
@@ -230,7 +231,7 @@ Vis3.prototype.updateVis = function() {
         .attr("cx", xStart)
         .attr("cy", function(d) {return vis.scatterY(d.tsp)})
         .attr("r", 5)
-        .attr("class", function(d) { return d.name.replace(/ |'/g, "") + " new"; })
+        .attr("class", function(d) { return d.name.replace(/ |'/g, "") + " new hover"; })
         .on("mouseover", vis.mouseover)
         .on("mouseout", vis.mouseout)
         .attr("fill", color)
