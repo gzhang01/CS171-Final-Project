@@ -17,8 +17,8 @@ Vis3.prototype.initVis = function() {
     var vis = this;
 
     vis.margin = {top: 40, right: 10, bottom: 60, left: 50};
-    vis.width = 750 - vis.margin.left - vis.margin.right;
-    vis.height = 350 - vis.margin.top - vis.margin.bottom;
+    vis.width = 1000 - vis.margin.left - vis.margin.right;
+    vis.height = 400 - vis.margin.top - vis.margin.bottom;
 
     // Height and width for two graphs
     vis.line = {width: ~~(vis.width * 0.43), height: vis.height};
@@ -69,7 +69,7 @@ Vis3.prototype.initVis = function() {
         .range([vis.scatter.height, 0]);
     vis.scatterR = d3.scale.linear()
         .domain(d3.extent(minutes))
-        .range([5, 15]);
+        .range([5, 25]);
 
     // Axes
     vis.lineXAxis = d3.svg.axis().scale(vis.lineX).orient("bottom");
@@ -97,7 +97,7 @@ Vis3.prototype.initVis = function() {
 
     // Add names to players
     player.append("text")
-        .text(function(d) { return d.name.replace(/[A-Za-z]* /g, ""); })
+        .text(function(d) { return d.name; })
         .attr("class", function(d) { return d.name.replace(/ |'/g, ""); })
         .attr("x", vis.line.width)
         .attr("y", function(d) { return vis.lineY(d.values[d.values.length - 1].tsp); })
