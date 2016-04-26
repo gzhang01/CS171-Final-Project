@@ -148,6 +148,7 @@ visOne.prototype.initVis = function() {
 
         if (!$("#seasonOne").html()) {
             $(document).ready(function () {
+
                 vis.tableYear = vis.year;
                 vis.tableSeason = vis.displayData[0].values[vis.index].Season;
                 vis.tableFg = vis.displayData[0].values[vis.index].Fg;
@@ -188,7 +189,7 @@ visOne.prototype.initVis = function() {
         }
         else {
             $(document).ready(function () {
-                $("span").text("");
+                $("#table-body > tr > td > span").text("");
             });
 
             vis.tableYear = vis.year;
@@ -209,6 +210,27 @@ visOne.prototype.initVis = function() {
             $('#2ptaOne').text(vis.table2fga);
         }
     }
+
+    /*//Setting Visualization One starting table info
+    $(document).ready(function () {
+
+        vis.tableYear = vis.year;
+        vis.tableSeason = vis.displayData[0].values[vis.index].Season;
+        vis.tableFg = vis.displayData[0].values[vis.index].Fg;
+        vis.tableFga = vis.displayData[1].values[vis.index].Fg;
+        vis.table3fg = vis.displayData[2].values[vis.index].Fg;
+        vis.table3fga = vis.displayData[3].values[vis.index].Fg;
+        vis.table2fg = vis.displayData[4].values[vis.index].Fg;
+        vis.table2fga = vis.displayData[5].values[vis.index].Fg;
+
+        $('#seasonOne').text(vis.tableSeason);
+        $('#fgOne').text(vis.tableFg);
+        $('#fgaOne').text(vis.tableFga);
+        $('#3ptOne').text(vis.table3fg);
+        $('#3ptaOne').text(vis.table3fga);
+        $('#2ptOne').text(vis.table2fg);
+        $('#2ptaOne').text(vis.table2fga);
+    });*/
 
     vis.wrangleData();
 
