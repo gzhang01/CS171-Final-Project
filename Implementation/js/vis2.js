@@ -51,7 +51,7 @@ function vis2LoadData(player) {
 
     allData = calculate_z_values(shotData);
 
-    updateVis(allData);
+    updateVis(allData, player);
   });
 }
 
@@ -83,14 +83,14 @@ function calculate_z_values(shotData){
   return finalData;
 }
 
-function updateVis(allData){
+function updateVis(allData, player){
   svg.selectAll('*').remove();
 
   svg.chart("BasketballShotChart", {
     // set svg width
     width: 600,
     // set title
-    title: 'shot chart',
+    title: 'Shot Chart',
     hexagonFillValue: function(d) {  return d.z; },
     heatScale: d3.scale.quantile()
         .domain([-2.5, 2.5])
@@ -105,5 +105,7 @@ function updateVis(allData){
         bin.z = (totalZ + (point.z * attempts))/bin.attempts;
     },
   }).draw(allData);
+
+  $(".shot-chart-title").text(player.substring(0,player.length - 3) + " shot chart");
 }
 
