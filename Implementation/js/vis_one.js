@@ -190,47 +190,26 @@ visOne.prototype.initVis = function() {
         else {
             $(document).ready(function () {
                 $("#table-body > tr > td > span").text("");
+
+                vis.tableYear = vis.year;
+                vis.tableSeason = vis.displayData[0].values[vis.index].Season;
+                vis.tableFg = vis.displayData[0].values[vis.index].Fg;
+                vis.tableFga = vis.displayData[1].values[vis.index].Fg;
+                vis.table3fg = vis.displayData[2].values[vis.index].Fg;
+                vis.table3fga = vis.displayData[3].values[vis.index].Fg;
+                vis.table2fg = vis.displayData[4].values[vis.index].Fg;
+                vis.table2fga = vis.displayData[5].values[vis.index].Fg;
+
+                $('#seasonOne').text(vis.tableSeason);
+                $('#fgOne').text(vis.tableFg);
+                $('#fgaOne').text(vis.tableFga);
+                $('#3ptOne').text(vis.table3fg);
+                $('#3ptaOne').text(vis.table3fga);
+                $('#2ptOne').text(vis.table2fg);
+                $('#2ptaOne').text(vis.table2fga);
             });
-
-            vis.tableYear = vis.year;
-            vis.tableSeason = vis.displayData[0].values[vis.index].Season;
-            vis.tableFg = vis.displayData[0].values[vis.index].Fg;
-            vis.tableFga = vis.displayData[1].values[vis.index].Fg;
-            vis.table3fg = vis.displayData[2].values[vis.index].Fg;
-            vis.table3fga = vis.displayData[3].values[vis.index].Fg;
-            vis.table2fg = vis.displayData[4].values[vis.index].Fg;
-            vis.table2fga = vis.displayData[5].values[vis.index].Fg;
-
-            $('#seasonOne').text(vis.tableSeason);
-            $('#fgOne').text(vis.tableFg);
-            $('#fgaOne').text(vis.tableFga);
-            $('#3ptOne').text(vis.table3fg);
-            $('#3ptaOne').text(vis.table3fga);
-            $('#2ptOne').text(vis.table2fg);
-            $('#2ptaOne').text(vis.table2fga);
         }
     }
-
-    /*//Setting Visualization One starting table info
-    $(document).ready(function () {
-
-        vis.tableYear = vis.year;
-        vis.tableSeason = vis.displayData[0].values[vis.index].Season;
-        vis.tableFg = vis.displayData[0].values[vis.index].Fg;
-        vis.tableFga = vis.displayData[1].values[vis.index].Fg;
-        vis.table3fg = vis.displayData[2].values[vis.index].Fg;
-        vis.table3fga = vis.displayData[3].values[vis.index].Fg;
-        vis.table2fg = vis.displayData[4].values[vis.index].Fg;
-        vis.table2fga = vis.displayData[5].values[vis.index].Fg;
-
-        $('#seasonOne').text(vis.tableSeason);
-        $('#fgOne').text(vis.tableFg);
-        $('#fgaOne').text(vis.tableFga);
-        $('#3ptOne').text(vis.table3fg);
-        $('#3ptaOne').text(vis.table3fga);
-        $('#2ptOne').text(vis.table2fg);
-        $('#2ptaOne').text(vis.table2fga);
-    });*/
 
     vis.wrangleData();
 
@@ -249,6 +228,42 @@ visOne.prototype.wrangleData = function() {
 visOne.prototype.updateVis = function() {
 
     var vis = this;
+
+    //Initialize the values at the start
+    $(document).ready(function () {
+
+        vis.tableYear = vis.year;
+        vis.tableSeason = vis.displayData[0].values[0].Season;
+        vis.tableFg = vis.displayData[0].values[0].Fg;
+        vis.tableFga = vis.displayData[1].values[0].Fg;
+        vis.table3fg = vis.displayData[2].values[0].Fg;
+        vis.table3fga = vis.displayData[3].values[0].Fg;
+        vis.table2fg = vis.displayData[4].values[0].Fg;
+        vis.table2fga = vis.displayData[5].values[0].Fg;
+
+        $('#seasonOne').text(vis.tableSeason);
+        $('#fgOne').text(vis.tableFg);
+        $('#fgaOne').text(vis.tableFga);
+        $('#3ptOne').text(vis.table3fg);
+        $('#3ptaOne').text(vis.table3fga);
+        $('#2ptOne').text(vis.table2fg);
+        $('#2ptaOne').text(vis.table2fga);
+
+        $('#seasonTwo').text(vis.displayData[0].values[36].Season);
+        $('#fgTwo').text(vis.displayData[0].values[36].Fg);
+        $('#fgaTwo').text(vis.displayData[1].values[36].Fg);
+        $('#3ptTwo').text(vis.displayData[2].values[36].Fg);
+        $('#3ptaTwo').text(vis.displayData[3].values[36].Fg);
+        $('#2ptTwo').text(vis.displayData[4].values[36].Fg);
+        $('#2ptaTwo').text(vis.displayData[5].values[36].Fg);
+
+        $('#fgComp').text(vis.percentageDiff(vis.tableFg, vis.displayData[0].values[36].Fg));
+        $('#fgaComp').text(vis.percentageDiff(vis.tableFga, vis.displayData[1].values[36].Fg));
+        $('#3ptComp').text(vis.percentageDiff(vis.table3fg, vis.displayData[2].values[36].Fg));
+        $('#3ptaComp').text(vis.percentageDiff(vis.table3fga, vis.displayData[3].values[36].Fg));
+        $('#2ptComp').text(vis.percentageDiff(vis.table2fg, vis.displayData[4].values[36].Fg));
+        $('#2ptaComp').text(vis.percentageDiff(vis.table2fga, vis.displayData[5].values[36].Fg));
+    });
 
     vis.div = d3.select("#visOne")
         .selectAll(".chart")
