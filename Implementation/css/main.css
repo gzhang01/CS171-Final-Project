@@ -12,6 +12,10 @@ body{
   margin-bottom: 25px;
 }
 
+.content-text{
+  font-size: large;
+  line-height: 1.7;
+}
 
 /* Scroll Down Button */
 #scroll-arrow a {
