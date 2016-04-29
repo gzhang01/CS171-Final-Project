@@ -176,10 +176,10 @@ Vis3.prototype.initVis = function() {
         })
         .on("click", function(d) {
             d3.select(".x-axis").selectAll(".select")
-                .attr("class", null)
+                .attr("class", "hover")
                 .style("stroke", null);
             d3.select(this).select("text")
-                .attr("class", "select")
+                .attr("class", "select hover")
                 .style("stroke", "black");
             vis.wrangleData();
         });
@@ -187,7 +187,7 @@ Vis3.prototype.initVis = function() {
     // Set most recent year as default active
     d3.select(".x-axis").selectAll("text")[0].forEach(function(d) {
         if (d.__data__ == years[years.length - 1]) {
-            d3.select(d).attr("class", "select").style("stroke", "black");
+            d3.select(d).attr("class", "select hover").style("stroke", "black");
         }
     });
 
