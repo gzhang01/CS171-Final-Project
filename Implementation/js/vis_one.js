@@ -354,9 +354,15 @@ visOne.prototype.updateVis = function() {
         .attr("dy", 13)
         .attr("y", vis.height);
 
-    vis.g.append("g")
+    //For coloring the ticks
+    vis.gy = vis.g.append("g")
         .attr("class", "y axis")
-        .call(vis.yAxis)
+        .call(vis.yAxis);
+
+    vis.gy.selectAll("g").filter(function(d) { return d; })
+        .classed("minor", true);
+
+    vis.gy
         .append("text")
         .attr("x", 0)
         .attr("y", -20)

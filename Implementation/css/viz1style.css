@@ -9,6 +9,11 @@
     shape-rendering: crispEdges;
 }
 
+.axis .minor line {
+    stroke: gray;
+    stroke-dasharray: 3,4;
+}
+
 .x.axis path {
     display: none;
 }
