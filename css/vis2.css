@@ -1,0 +1,8 @@
+.form-control{
+  width: 300px;
+  margin: auto;
+}
+
+.shot-chart-title{
+  text-transform: capitalize;
+}

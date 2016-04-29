@@ -1,0 +1,428 @@
+,GRID_TYPE,GAME_ID,GAME_EVENT_ID,PLAYER_ID,PLAYER_NAME,TEAM_ID,TEAM_NAME,PERIOD,MINUTES_REMAINING,SECONDS_REMAINING,EVENT_TYPE,ACTION_TYPE,SHOT_TYPE,SHOT_ZONE_BASIC,SHOT_ZONE_AREA,SHOT_ZONE_RANGE,SHOT_DISTANCE,LOC_X,LOC_Y,SHOT_ATTEMPTED_FLAG,SHOT_MADE_FLAG
+0,Shot Chart Detail,0021500003,171,201578,Marreese Speights,1610612744,Golden State Warriors,2,10,11,Missed Shot,Tip Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,5,-4,1,0
+1,Shot Chart Detail,0021500003,142,201578,Marreese Speights,1610612744,Golden State Warriors,2,10,10,Missed Shot,Tip Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-6,16,1,0
+2,Shot Chart Detail,0021500003,163,201578,Marreese Speights,1610612744,Golden State Warriors,2,8,56,Missed Shot,Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,5,50,28,1,0
+3,Shot Chart Detail,0021500003,458,201578,Marreese Speights,1610612744,Golden State Warriors,4,11,29,Made Shot,Pullup Jump shot,2PT Field Goal,In The Paint (Non-RA),Center(C),8-16 ft.,13,19,129,1,1
+4,Shot Chart Detail,0021500003,462,201578,Marreese Speights,1610612744,Golden State Warriors,4,10,28,Missed Shot,Step Back Jump shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,18,-109,154,1,0
+5,Shot Chart Detail,0021500003,477,201578,Marreese Speights,1610612744,Golden State Warriors,4,9,39,Missed Shot,Tip Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,1,9,1,0
+6,Shot Chart Detail,0021500003,585,201578,Marreese Speights,1610612744,Golden State Warriors,4,0,17,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,25,114,228,1,1
+7,Shot Chart Detail,0021500030,131,201578,Marreese Speights,1610612744,Golden State Warriors,1,2,22,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,24,2,244,1,0
+8,Shot Chart Detail,0021500030,139,201578,Marreese Speights,1610612744,Golden State Warriors,1,1,30,Missed Shot,Jump Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,27,16,1,0
+9,Shot Chart Detail,0021500030,141,201578,Marreese Speights,1610612744,Golden State Warriors,1,1,26,Made Shot,Hook Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,4,46,13,1,1
+10,Shot Chart Detail,0021500030,169,201578,Marreese Speights,1610612744,Golden State Warriors,2,11,23,Made Shot,Putback Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-27,8,1,1
+11,Shot Chart Detail,0021500030,181,201578,Marreese Speights,1610612744,Golden State Warriors,2,9,49,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,20,17,200,1,1
+12,Shot Chart Detail,0021500030,194,201578,Marreese Speights,1610612744,Golden State Warriors,2,8,28,Missed Shot,Fadeaway Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),8-16 ft.,15,158,21,1,0
+13,Shot Chart Detail,0021500030,439,201578,Marreese Speights,1610612744,Golden State Warriors,4,11,34,Missed Shot,Pullup Jump shot,2PT Field Goal,Mid-Range,Left Side(L),16-24 ft.,17,-173,36,1,0
+14,Shot Chart Detail,0021500030,470,201578,Marreese Speights,1610612744,Golden State Warriors,4,8,38,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,19,-114,154,1,1
+15,Shot Chart Detail,0021500030,479,201578,Marreese Speights,1610612744,Golden State Warriors,4,8,14,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+16,Shot Chart Detail,0021500030,483,201578,Marreese Speights,1610612744,Golden State Warriors,4,7,46,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,20,-112,169,1,0
+17,Shot Chart Detail,0021500030,492,201578,Marreese Speights,1610612744,Golden State Warriors,4,6,41,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+18,Shot Chart Detail,0021500035,441,201578,Marreese Speights,1610612744,Golden State Warriors,4,10,18,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,19,48,193,1,1
+19,Shot Chart Detail,0021500035,446,201578,Marreese Speights,1610612744,Golden State Warriors,4,9,44,Made Shot,Step Back Jump shot,2PT Field Goal,Mid-Range,Left Side(L),16-24 ft.,16,-168,3,1,1
+20,Shot Chart Detail,0021500035,457,201578,Marreese Speights,1610612744,Golden State Warriors,4,8,47,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,21,128,169,1,0
+21,Shot Chart Detail,0021500035,461,201578,Marreese Speights,1610612744,Golden State Warriors,4,8,26,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,20,-43,198,1,0
+22,Shot Chart Detail,0021500051,84,201578,Marreese Speights,1610612744,Golden State Warriors,1,3,31,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-14,21,1,0
+23,Shot Chart Detail,0021500051,101,201578,Marreese Speights,1610612744,Golden State Warriors,1,1,42,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,22,18,1,0
+24,Shot Chart Detail,0021500051,139,201578,Marreese Speights,1610612744,Golden State Warriors,2,10,19,Missed Shot,Putback Layup Shot,2PT Field Goal,Mid-Range,Left Side(L),8-16 ft.,13,-125,38,1,0
+25,Shot Chart Detail,0021500051,144,201578,Marreese Speights,1610612744,Golden State Warriors,2,9,59,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,20,107,178,1,1
+26,Shot Chart Detail,0021500051,161,201578,Marreese Speights,1610612744,Golden State Warriors,2,7,37,Missed Shot,Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),8-16 ft.,8,-27,77,1,0
+27,Shot Chart Detail,0021500051,400,201578,Marreese Speights,1610612744,Golden State Warriors,3,0,50,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),16-24 ft.,16,166,16,1,0
+28,Shot Chart Detail,0021500051,418,201578,Marreese Speights,1610612744,Golden State Warriors,4,11,20,Missed Shot,Turnaround Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),16-24 ft.,16,146,67,1,0
+29,Shot Chart Detail,0021500051,543,201578,Marreese Speights,1610612744,Golden State Warriors,4,0,52,Made Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-4,26,1,1
+30,Shot Chart Detail,0021500069,81,201578,Marreese Speights,1610612744,Golden State Warriors,1,4,26,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,20,140,154,1,0
+31,Shot Chart Detail,0021500069,111,201578,Marreese Speights,1610612744,Golden State Warriors,1,2,45,Made Shot,Running Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+32,Shot Chart Detail,0021500069,123,201578,Marreese Speights,1610612744,Golden State Warriors,1,1,54,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,20,-86,183,1,1
+33,Shot Chart Detail,0021500069,139,201578,Marreese Speights,1610612744,Golden State Warriors,1,0,0,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side(L),16-24 ft.,16,-148,62,1,0
+34,Shot Chart Detail,0021500069,358,201578,Marreese Speights,1610612744,Golden State Warriors,3,4,6,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,19,46,188,1,0
+35,Shot Chart Detail,0021500069,378,201578,Marreese Speights,1610612744,Golden State Warriors,3,2,6,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,20,-61,193,1,0
+36,Shot Chart Detail,0021500069,431,201578,Marreese Speights,1610612744,Golden State Warriors,4,8,39,Missed Shot,Turnaround Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),8-16 ft.,10,43,97,1,0
+37,Shot Chart Detail,0021500083,69,201578,Marreese Speights,1610612744,Golden State Warriors,1,4,20,Missed Shot,Jump Shot,2PT Field Goal,In The Paint (Non-RA),Left Side(L),8-16 ft.,8,-66,61,1,0
+38,Shot Chart Detail,0021500083,88,201578,Marreese Speights,1610612744,Golden State Warriors,1,3,24,Missed Shot,Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,5,35,46,1,0
+39,Shot Chart Detail,0021500083,102,201578,Marreese Speights,1610612744,Golden State Warriors,1,2,15,Missed Shot,Jump Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,-27,16,1,0
+40,Shot Chart Detail,0021500083,106,201578,Marreese Speights,1610612744,Golden State Warriors,1,1,54,Missed Shot,Tip Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-1,11,1,0
+41,Shot Chart Detail,0021500083,360,201578,Marreese Speights,1610612744,Golden State Warriors,3,3,55,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,26,155,218,1,0
+42,Shot Chart Detail,0021500083,401,201578,Marreese Speights,1610612744,Golden State Warriors,4,11,47,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,20,130,154,1,0
+43,Shot Chart Detail,0021500083,410,201578,Marreese Speights,1610612744,Golden State Warriors,4,10,12,Made Shot,Turnaround Bank Hook Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,4,33,26,1,1
+44,Shot Chart Detail,0021500092,194,201578,Marreese Speights,1610612744,Golden State Warriors,2,6,23,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side(L),16-24 ft.,18,-153,95,1,0
+45,Shot Chart Detail,0021500092,199,201578,Marreese Speights,1610612744,Golden State Warriors,2,5,50,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),16-24 ft.,19,197,8,1,1
+46,Shot Chart Detail,0021500104,134,201578,Marreese Speights,1610612744,Golden State Warriors,2,8,37,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-2,16,1,0
+47,Shot Chart Detail,0021500104,151,201578,Marreese Speights,1610612744,Golden State Warriors,2,7,56,Missed Shot,Turnaround Hook Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,6,9,62,1,0
+48,Shot Chart Detail,0021500104,168,201578,Marreese Speights,1610612744,Golden State Warriors,2,6,23,Missed Shot,No Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,6,13,1,0
+49,Shot Chart Detail,0021500104,182,201578,Marreese Speights,1610612744,Golden State Warriors,2,5,14,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,18,-112,141,1,1
+50,Shot Chart Detail,0021500120,174,201578,Marreese Speights,1610612744,Golden State Warriors,2,7,13,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),8-16 ft.,15,115,110,1,0
+51,Shot Chart Detail,0021500120,189,201578,Marreese Speights,1610612744,Golden State Warriors,2,6,29,Missed Shot,Finger Roll Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,9,16,1,0
+52,Shot Chart Detail,0021500120,212,201578,Marreese Speights,1610612744,Golden State Warriors,2,4,23,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,20,-140,149,1,0
+53,Shot Chart Detail,0021500164,346,201578,Marreese Speights,1610612744,Golden State Warriors,3,0,50,Made Shot,Pullup Jump shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,16,-14,169,1,1
+54,Shot Chart Detail,0021500164,372,201578,Marreese Speights,1610612744,Golden State Warriors,4,10,42,Made Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,15,13,1,1
+55,Shot Chart Detail,0021500164,410,201578,Marreese Speights,1610612744,Golden State Warriors,4,8,12,Missed Shot,Jump Bank Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,6,30,52,1,0
+56,Shot Chart Detail,0021500177,77,201578,Marreese Speights,1610612744,Golden State Warriors,1,3,16,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,6,18,1,0
+57,Shot Chart Detail,0021500177,79,201578,Marreese Speights,1610612744,Golden State Warriors,1,3,12,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,0,11,1,0
+58,Shot Chart Detail,0021500177,438,201578,Marreese Speights,1610612744,Golden State Warriors,4,9,6,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,18,-106,149,1,0
+59,Shot Chart Detail,0021500200,442,201578,Marreese Speights,1610612744,Golden State Warriors,4,9,59,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,19,-96,174,1,0
+60,Shot Chart Detail,0021500200,457,201578,Marreese Speights,1610612744,Golden State Warriors,4,8,38,Made Shot,Tip Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,20,11,1,1
+61,Shot Chart Detail,0021500200,473,201578,Marreese Speights,1610612744,Golden State Warriors,4,7,24,Made Shot,Running Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,1,2,1,1
+62,Shot Chart Detail,0021500200,490,201578,Marreese Speights,1610612744,Golden State Warriors,4,5,57,Missed Shot,Jump Bank Shot,2PT Field Goal,Mid-Range,Left Side(L),16-24 ft.,17,-161,56,1,0
+63,Shot Chart Detail,0021500214,120,201578,Marreese Speights,1610612744,Golden State Warriors,2,11,21,Made Shot,Pullup Jump shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,19,-86,178,1,1
+64,Shot Chart Detail,0021500214,128,201578,Marreese Speights,1610612744,Golden State Warriors,2,9,57,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,17,-84,159,1,0
+65,Shot Chart Detail,0021500214,162,201578,Marreese Speights,1610612744,Golden State Warriors,2,7,4,Missed Shot,Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,6,-42,43,1,0
+66,Shot Chart Detail,0021500214,447,201578,Marreese Speights,1610612744,Golden State Warriors,4,3,11,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,25,-91,237,1,0
+67,Shot Chart Detail,0021500214,467,201578,Marreese Speights,1610612744,Golden State Warriors,4,1,19,Missed Shot,Fadeaway Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),8-16 ft.,13,132,21,1,0
+68,Shot Chart Detail,0021500245,138,201578,Marreese Speights,1610612744,Golden State Warriors,2,10,24,Made Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,19,21,1,1
+69,Shot Chart Detail,0021500245,151,201578,Marreese Speights,1610612744,Golden State Warriors,2,9,28,Made Shot,Fadeaway Bank shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,5,-27,47,1,1
+70,Shot Chart Detail,0021500245,156,201578,Marreese Speights,1610612744,Golden State Warriors,2,9,0,Made Shot,Jump Bank Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,6,-45,41,1,1
+71,Shot Chart Detail,0021500245,158,201578,Marreese Speights,1610612744,Golden State Warriors,2,8,31,Missed Shot,Floating Jump shot,2PT Field Goal,In The Paint (Non-RA),Right Side(R),8-16 ft.,10,69,75,1,0
+72,Shot Chart Detail,0021500245,374,201578,Marreese Speights,1610612744,Golden State Warriors,3,1,47,Missed Shot,Jump Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,12,28,1,0
+73,Shot Chart Detail,0021500245,389,201578,Marreese Speights,1610612744,Golden State Warriors,3,0,44,Missed Shot,Driving Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,0
+74,Shot Chart Detail,0021500245,418,201578,Marreese Speights,1610612744,Golden State Warriors,4,10,15,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,15,8,1,1
+75,Shot Chart Detail,0021500245,423,201578,Marreese Speights,1610612744,Golden State Warriors,4,9,45,Missed Shot,Running Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,7,-6,70,1,0
+76,Shot Chart Detail,0021500245,454,201578,Marreese Speights,1610612744,Golden State Warriors,4,7,51,Missed Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,0
+77,Shot Chart Detail,0021500245,457,201578,Marreese Speights,1610612744,Golden State Warriors,4,7,24,Made Shot,Driving Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+78,Shot Chart Detail,0021500245,508,201578,Marreese Speights,1610612744,Golden State Warriors,4,2,30,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,24,182,169,1,0
+79,Shot Chart Detail,0021500245,519,201578,Marreese Speights,1610612744,Golden State Warriors,4,1,41,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-6,21,1,0
+80,Shot Chart Detail,0021500259,378,201578,Marreese Speights,1610612744,Golden State Warriors,4,11,24,Made Shot,Fadeaway Jump Shot,2PT Field Goal,Mid-Range,Left Side(L),16-24 ft.,19,-186,43,1,1
+81,Shot Chart Detail,0021500268,130,201578,Marreese Speights,1610612744,Golden State Warriors,2,11,31,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),16-24 ft.,18,174,70,1,1
+82,Shot Chart Detail,0021500268,144,201578,Marreese Speights,1610612744,Golden State Warriors,2,9,34,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,19,89,174,1,0
+83,Shot Chart Detail,0021500268,173,201578,Marreese Speights,1610612744,Golden State Warriors,2,7,47,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,20,133,151,1,1
+84,Shot Chart Detail,0021500268,175,201578,Marreese Speights,1610612744,Golden State Warriors,2,7,17,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),16-24 ft.,16,166,8,1,0
+85,Shot Chart Detail,0021500268,374,201578,Marreese Speights,1610612744,Golden State Warriors,4,11,46,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,18,66,174,1,1
+86,Shot Chart Detail,0021500268,413,201578,Marreese Speights,1610612744,Golden State Warriors,4,7,15,Missed Shot,Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,4,-12,41,1,0
+87,Shot Chart Detail,0021500268,436,201578,Marreese Speights,1610612744,Golden State Warriors,4,5,57,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,21,-153,146,1,0
+88,Shot Chart Detail,0021500290,170,201578,Marreese Speights,1610612744,Golden State Warriors,2,7,37,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,20,-12,205,1,1
+89,Shot Chart Detail,0021500290,180,201578,Marreese Speights,1610612744,Golden State Warriors,2,6,21,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,24,-45,242,1,0
+90,Shot Chart Detail,0021500290,393,201578,Marreese Speights,1610612744,Golden State Warriors,3,0,36,Missed Shot,Turnaround Hook Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,5,9,56,1,0
+91,Shot Chart Detail,0021500290,396,201578,Marreese Speights,1610612744,Golden State Warriors,3,0,24,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side(L),16-24 ft.,17,-171,21,1,0
+92,Shot Chart Detail,0021500300,181,201578,Marreese Speights,1610612744,Golden State Warriors,2,9,34,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),8-16 ft.,15,156,21,1,1
+93,Shot Chart Detail,0021500300,420,201578,Marreese Speights,1610612744,Golden State Warriors,4,11,20,Made Shot,Turnaround Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),16-24 ft.,16,163,2,1,1
+94,Shot Chart Detail,0021500300,438,201578,Marreese Speights,1610612744,Golden State Warriors,4,9,5,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),16-24 ft.,19,195,-10,1,0
+95,Shot Chart Detail,0021500300,446,201578,Marreese Speights,1610612744,Golden State Warriors,4,8,12,Made Shot,Cutting Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,1,16,1,1
+96,Shot Chart Detail,0021500300,466,201578,Marreese Speights,1610612744,Golden State Warriors,4,6,2,Missed Shot,Jump Shot,3PT Field Goal,Left Corner 3,Left Side(L),24+ ft.,23,-232,-16,1,0
+97,Shot Chart Detail,0021500300,479,201578,Marreese Speights,1610612744,Golden State Warriors,4,5,18,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,18,-115,144,1,0
+98,Shot Chart Detail,0021500300,484,201578,Marreese Speights,1610612744,Golden State Warriors,4,4,44,Missed Shot,Tip Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,-2,7,1,0
+99,Shot Chart Detail,0021500300,502,201578,Marreese Speights,1610612744,Golden State Warriors,4,3,48,Missed Shot,Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,4,37,23,1,0
+100,Shot Chart Detail,0021500336,142,201578,Marreese Speights,1610612744,Golden State Warriors,2,10,7,Missed Shot,Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,6,60,16,1,0
+101,Shot Chart Detail,0021500336,154,201578,Marreese Speights,1610612744,Golden State Warriors,2,8,59,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,21,-61,208,1,0
+102,Shot Chart Detail,0021500336,159,201578,Marreese Speights,1610612744,Golden State Warriors,2,8,42,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side(L),8-16 ft.,9,-91,18,1,1
+103,Shot Chart Detail,0021500336,444,201578,Marreese Speights,1610612744,Golden State Warriors,4,9,48,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,18,-4,183,1,0
+104,Shot Chart Detail,0021500351,139,201578,Marreese Speights,1610612744,Golden State Warriors,2,11,38,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,0,10,1,0
+105,Shot Chart Detail,0021500351,177,201578,Marreese Speights,1610612744,Golden State Warriors,2,7,58,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,-4,3,1,1
+106,Shot Chart Detail,0021500351,189,201578,Marreese Speights,1610612744,Golden State Warriors,2,6,37,Missed Shot,Hook Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,5,55,-1,1,0
+107,Shot Chart Detail,0021500381,399,201578,Marreese Speights,1610612744,Golden State Warriors,4,10,59,Missed Shot,Jump Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,-22,23,1,0
+108,Shot Chart Detail,0021500381,413,201578,Marreese Speights,1610612744,Golden State Warriors,4,9,44,Made Shot,Jump Bank Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,-32,23,1,1
+109,Shot Chart Detail,0021500381,436,201578,Marreese Speights,1610612744,Golden State Warriors,4,7,37,Made Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,15,8,1,1
+110,Shot Chart Detail,0021500381,449,201578,Marreese Speights,1610612744,Golden State Warriors,4,6,2,Made Shot,Driving Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+111,Shot Chart Detail,0021500381,456,201578,Marreese Speights,1610612744,Golden State Warriors,4,5,30,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,19,-79,174,1,0
+112,Shot Chart Detail,0021500381,481,201578,Marreese Speights,1610612744,Golden State Warriors,4,2,48,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,18,-145,120,1,0
+113,Shot Chart Detail,0021500381,494,201578,Marreese Speights,1610612744,Golden State Warriors,4,1,46,Missed Shot,Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,4,17,47,1,0
+114,Shot Chart Detail,0021500397,154,201578,Marreese Speights,1610612744,Golden State Warriors,2,11,15,Missed Shot,Turnaround Bank shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,4,32,33,1,0
+115,Shot Chart Detail,0021500397,156,201578,Marreese Speights,1610612744,Golden State Warriors,2,10,58,Missed Shot,Turnaround Hook Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,7,-73,21,1,0
+116,Shot Chart Detail,0021500397,168,201578,Marreese Speights,1610612744,Golden State Warriors,2,9,57,Missed Shot,Driving Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,0
+117,Shot Chart Detail,0021500397,192,201578,Marreese Speights,1610612744,Golden State Warriors,2,8,11,Made Shot,Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),8-16 ft.,8,-6,82,1,1
+118,Shot Chart Detail,0021500397,416,201578,Marreese Speights,1610612744,Golden State Warriors,4,11,39,Missed Shot,Tip Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,-7,7,1,0
+119,Shot Chart Detail,0021500397,432,201578,Marreese Speights,1610612744,Golden State Warriors,4,10,3,Made Shot,Turnaround Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,5,-9,56,1,1
+120,Shot Chart Detail,0021500397,438,201578,Marreese Speights,1610612744,Golden State Warriors,4,9,7,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,17,120,134,1,0
+121,Shot Chart Detail,0021500438,146,201578,Marreese Speights,1610612744,Golden State Warriors,2,9,57,Missed Shot,Fadeaway Jump Shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,17,22,174,1,0
+122,Shot Chart Detail,0021500480,69,201578,Marreese Speights,1610612744,Golden State Warriors,1,3,20,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side(L),8-16 ft.,12,-125,23,1,1
+123,Shot Chart Detail,0021500480,100,201578,Marreese Speights,1610612744,Golden State Warriors,1,0,16,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,20,86,185,1,1
+124,Shot Chart Detail,0021500480,225,201578,Marreese Speights,1610612744,Golden State Warriors,2,2,9,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,18,50,180,1,1
+125,Shot Chart Detail,0021500480,243,201578,Marreese Speights,1610612744,Golden State Warriors,2,0,9,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),16-24 ft.,20,182,90,1,0
+126,Shot Chart Detail,0021500480,349,201578,Marreese Speights,1610612744,Golden State Warriors,3,1,44,Missed Shot,Running Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,-2,-5,1,0
+127,Shot Chart Detail,0021500480,381,201578,Marreese Speights,1610612744,Golden State Warriors,4,11,40,Made Shot,Tip Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,-9,2,1,1
+128,Shot Chart Detail,0021500480,385,201578,Marreese Speights,1610612744,Golden State Warriors,4,11,11,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,18,-9,188,1,0
+129,Shot Chart Detail,0021500480,392,201578,Marreese Speights,1610612744,Golden State Warriors,4,10,49,Missed Shot,Driving Floating Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,5,30,46,1,0
+130,Shot Chart Detail,0021500480,393,201578,Marreese Speights,1610612744,Golden State Warriors,4,10,47,Made Shot,Putback Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-14,11,1,1
+131,Shot Chart Detail,0021500480,435,201578,Marreese Speights,1610612744,Golden State Warriors,4,5,49,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,18,15,183,1,0
+132,Shot Chart Detail,0021500480,464,201578,Marreese Speights,1610612744,Golden State Warriors,4,3,35,Missed Shot,Hook Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,15,36,1,0
+133,Shot Chart Detail,0021500480,491,201578,Marreese Speights,1610612744,Golden State Warriors,4,2,22,Missed Shot,Alley Oop Layup shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-16,8,1,0
+134,Shot Chart Detail,0021500485,177,201578,Marreese Speights,1610612744,Golden State Warriors,2,9,46,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,19,-1,195,1,0
+135,Shot Chart Detail,0021500485,188,201578,Marreese Speights,1610612744,Golden State Warriors,2,9,4,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,16,43,160,1,1
+136,Shot Chart Detail,0021500485,461,201578,Marreese Speights,1610612744,Golden State Warriors,4,11,43,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,16,82,146,1,0
+137,Shot Chart Detail,0021500485,487,201578,Marreese Speights,1610612744,Golden State Warriors,4,8,59,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,-6,2,1,0
+138,Shot Chart Detail,0021500504,100,201578,Marreese Speights,1610612744,Golden State Warriors,1,2,37,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,18,-50,178,1,1
+139,Shot Chart Detail,0021500504,102,201578,Marreese Speights,1610612744,Golden State Warriors,1,2,9,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side(L),16-24 ft.,16,-158,26,1,0
+140,Shot Chart Detail,0021500504,142,201578,Marreese Speights,1610612744,Golden State Warriors,2,11,20,Missed Shot,Tip Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-9,11,1,0
+141,Shot Chart Detail,0021500504,141,201578,Marreese Speights,1610612744,Golden State Warriors,2,11,20,Missed Shot,Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),8-16 ft.,9,1,95,1,0
+142,Shot Chart Detail,0021500504,377,201578,Marreese Speights,1610612744,Golden State Warriors,3,2,20,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-7,11,1,1
+143,Shot Chart Detail,0021500504,382,201578,Marreese Speights,1610612744,Golden State Warriors,3,1,45,Missed Shot,Turnaround Fadeaway shot,2PT Field Goal,Mid-Range,Left Side(L),8-16 ft.,12,-124,11,1,0
+144,Shot Chart Detail,0021500504,390,201578,Marreese Speights,1610612744,Golden State Warriors,3,0,43,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,19,128,151,1,0
+145,Shot Chart Detail,0021500504,397,201578,Marreese Speights,1610612744,Golden State Warriors,3,0,0,Missed Shot,Jump Shot,3PT Field Goal,Backcourt,Back Court(BC),Back Court Shot,76,-179,748,1,0
+146,Shot Chart Detail,0021500504,550,201578,Marreese Speights,1610612744,Golden State Warriors,5,0,47,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,17,61,164,1,1
+147,Shot Chart Detail,0021500520,95,201578,Marreese Speights,1610612744,Golden State Warriors,1,1,55,Made Shot,Fadeaway Jump Shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,17,-6,178,1,1
+148,Shot Chart Detail,0021500520,102,201578,Marreese Speights,1610612744,Golden State Warriors,1,1,14,Made Shot,Fadeaway Jump Shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,18,-19,183,1,1
+149,Shot Chart Detail,0021500520,113,201578,Marreese Speights,1610612744,Golden State Warriors,1,0,24,Made Shot,Putback Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-12,18,1,1
+150,Shot Chart Detail,0021500520,142,201578,Marreese Speights,1610612744,Golden State Warriors,2,8,34,Made Shot,Fadeaway Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),16-24 ft.,16,151,65,1,1
+151,Shot Chart Detail,0021500520,314,201578,Marreese Speights,1610612744,Golden State Warriors,3,2,20,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,4,11,1,1
+152,Shot Chart Detail,0021500520,322,201578,Marreese Speights,1610612744,Golden State Warriors,3,1,14,Missed Shot,Turnaround Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,5,-7,56,1,0
+153,Shot Chart Detail,0021500520,332,201578,Marreese Speights,1610612744,Golden State Warriors,3,0,15,Made Shot,Pullup Jump shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,17,30,169,1,1
+154,Shot Chart Detail,0021500520,351,201578,Marreese Speights,1610612744,Golden State Warriors,4,10,10,Made Shot,Fadeaway Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),8-16 ft.,15,150,26,1,1
+155,Shot Chart Detail,0021500520,360,201578,Marreese Speights,1610612744,Golden State Warriors,4,9,40,Missed Shot,Pullup Jump shot,2PT Field Goal,Mid-Range,Right Side(R),16-24 ft.,16,161,21,1,0
+156,Shot Chart Detail,0021500520,366,201578,Marreese Speights,1610612744,Golden State Warriors,4,8,26,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,26,194,183,1,0
+157,Shot Chart Detail,0021500524,74,201578,Marreese Speights,1610612744,Golden State Warriors,1,6,15,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,21,-145,154,1,0
+158,Shot Chart Detail,0021500524,106,201578,Marreese Speights,1610612744,Golden State Warriors,1,2,43,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,19,-135,139,1,1
+159,Shot Chart Detail,0021500524,115,201578,Marreese Speights,1610612744,Golden State Warriors,1,1,48,Missed Shot,Turnaround Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),8-16 ft.,14,94,111,1,0
+160,Shot Chart Detail,0021500524,142,201578,Marreese Speights,1610612744,Golden State Warriors,2,11,27,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,16,0,164,1,0
+161,Shot Chart Detail,0021500524,145,201578,Marreese Speights,1610612744,Golden State Warriors,2,10,50,Made Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,1,18,1,1
+162,Shot Chart Detail,0021500524,420,201578,Marreese Speights,1610612744,Golden State Warriors,3,0,59,Missed Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,0
+163,Shot Chart Detail,0021500524,450,201578,Marreese Speights,1610612744,Golden State Warriors,4,9,9,Missed Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,0
+164,Shot Chart Detail,0021500524,501,201578,Marreese Speights,1610612744,Golden State Warriors,4,5,2,Missed Shot,Tip Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-8,10,1,0
+165,Shot Chart Detail,0021500524,494,201578,Marreese Speights,1610612744,Golden State Warriors,4,5,1,Made Shot,Tip Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,-19,26,1,1
+166,Shot Chart Detail,0021500524,506,201578,Marreese Speights,1610612744,Golden State Warriors,4,3,50,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,27,96,254,1,0
+167,Shot Chart Detail,0021500524,526,201578,Marreese Speights,1610612744,Golden State Warriors,4,2,23,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),8-16 ft.,14,140,31,1,1
+168,Shot Chart Detail,0021500524,535,201578,Marreese Speights,1610612744,Golden State Warriors,4,1,6,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),16-24 ft.,17,159,67,1,0
+169,Shot Chart Detail,0021500548,123,201578,Marreese Speights,1610612744,Golden State Warriors,2,11,27,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,20,-107,175,1,0
+170,Shot Chart Detail,0021500548,422,201578,Marreese Speights,1610612744,Golden State Warriors,4,11,38,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,14,7,1,0
+171,Shot Chart Detail,0021500548,434,201578,Marreese Speights,1610612744,Golden State Warriors,4,10,24,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,18,12,188,1,1
+172,Shot Chart Detail,0021500548,445,201578,Marreese Speights,1610612744,Golden State Warriors,4,9,31,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,21,40,210,1,1
+173,Shot Chart Detail,0021500548,457,201578,Marreese Speights,1610612744,Golden State Warriors,4,8,31,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side(L),16-24 ft.,21,-214,26,1,1
+174,Shot Chart Detail,0021500548,466,201578,Marreese Speights,1610612744,Golden State Warriors,4,7,25,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,18,-127,141,1,0
+175,Shot Chart Detail,0021500548,533,201578,Marreese Speights,1610612744,Golden State Warriors,4,0,37,Made Shot,Turnaround Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,18,145,116,1,1
+176,Shot Chart Detail,0021500568,397,201578,Marreese Speights,1610612744,Golden State Warriors,4,11,30,Made Shot,Pullup Jump shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,18,127,129,1,1
+177,Shot Chart Detail,0021500568,401,201578,Marreese Speights,1610612744,Golden State Warriors,4,11,0,Made Shot,Turnaround Fadeaway shot,2PT Field Goal,Mid-Range,Right Side(R),8-16 ft.,15,119,95,1,1
+178,Shot Chart Detail,0021500568,404,201578,Marreese Speights,1610612744,Golden State Warriors,4,10,21,Missed Shot,Turnaround Fadeaway shot,2PT Field Goal,In The Paint (Non-RA),Center(C),8-16 ft.,12,48,120,1,0
+179,Shot Chart Detail,0021500568,414,201578,Marreese Speights,1610612744,Golden State Warriors,4,9,52,Made Shot,Hook Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,-4,38,1,1
+180,Shot Chart Detail,0021500583,97,201578,Marreese Speights,1610612744,Golden State Warriors,1,3,24,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),16-24 ft.,21,209,65,1,0
+181,Shot Chart Detail,0021500583,100,201578,Marreese Speights,1610612744,Golden State Warriors,1,2,57,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-12,8,1,0
+182,Shot Chart Detail,0021500583,102,201578,Marreese Speights,1610612744,Golden State Warriors,1,2,52,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,15,0,1,0
+183,Shot Chart Detail,0021500583,137,201578,Marreese Speights,1610612744,Golden State Warriors,1,0,46,Missed Shot,Tip Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-6,19,1,0
+184,Shot Chart Detail,0021500583,175,201578,Marreese Speights,1610612744,Golden State Warriors,2,10,30,Missed Shot,Hook Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,6,-20,65,1,0
+185,Shot Chart Detail,0021500622,446,201578,Marreese Speights,1610612744,Golden State Warriors,4,8,18,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,17,119,129,1,0
+186,Shot Chart Detail,0021500622,455,201578,Marreese Speights,1610612744,Golden State Warriors,4,7,15,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,20,-11,208,1,1
+187,Shot Chart Detail,0021500622,469,201578,Marreese Speights,1610612744,Golden State Warriors,4,6,21,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Center(C),8-16 ft.,15,45,151,1,0
+188,Shot Chart Detail,0021500622,503,201578,Marreese Speights,1610612744,Golden State Warriors,4,3,51,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),16-24 ft.,17,174,-11,1,0
+189,Shot Chart Detail,0021500634,151,201578,Marreese Speights,1610612744,Golden State Warriors,2,9,26,Missed Shot,Jump Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,-1,36,1,0
+190,Shot Chart Detail,0021500634,172,201578,Marreese Speights,1610612744,Golden State Warriors,2,7,7,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,17,-43,170,1,0
+191,Shot Chart Detail,0021500634,546,201578,Marreese Speights,1610612744,Golden State Warriors,4,1,47,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,21,122,175,1,1
+192,Shot Chart Detail,0021500634,550,201578,Marreese Speights,1610612744,Golden State Warriors,4,1,19,Missed Shot,Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,5,-1,51,1,0
+193,Shot Chart Detail,0021500634,562,201578,Marreese Speights,1610612744,Golden State Warriors,4,0,28,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,26,176,193,1,1
+194,Shot Chart Detail,0021500652,135,201578,Marreese Speights,1610612744,Golden State Warriors,2,11,15,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,20,-65,190,1,0
+195,Shot Chart Detail,0021500652,159,201578,Marreese Speights,1610612744,Golden State Warriors,2,9,23,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,16,-7,169,1,0
+196,Shot Chart Detail,0021500652,563,201578,Marreese Speights,1610612744,Golden State Warriors,4,0,14,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,27,-58,267,1,1
+197,Shot Chart Detail,0021500675,183,201578,Marreese Speights,1610612744,Golden State Warriors,2,5,20,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),8-16 ft.,15,153,11,1,0
+198,Shot Chart Detail,0021500675,227,201578,Marreese Speights,1610612744,Golden State Warriors,2,2,27,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Center(C),8-16 ft.,15,32,149,1,0
+199,Shot Chart Detail,0021500675,232,201578,Marreese Speights,1610612744,Golden State Warriors,2,2,13,Missed Shot,Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,5,-4,51,1,0
+200,Shot Chart Detail,0021500675,400,201578,Marreese Speights,1610612744,Golden State Warriors,3,0,50,Made Shot,Fadeaway Jump Shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,17,-122,131,1,1
+201,Shot Chart Detail,0021500675,423,201578,Marreese Speights,1610612744,Golden State Warriors,4,11,28,Missed Shot,Fadeaway Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,20,78,188,1,0
+202,Shot Chart Detail,0021500675,428,201578,Marreese Speights,1610612744,Golden State Warriors,4,10,54,Missed Shot,Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,7,-20,70,1,0
+203,Shot Chart Detail,0021500675,429,201578,Marreese Speights,1610612744,Golden State Warriors,4,10,52,Missed Shot,Tip Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,-6,7,1,0
+204,Shot Chart Detail,0021500675,462,201578,Marreese Speights,1610612744,Golden State Warriors,4,7,51,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,18,76,174,1,0
+205,Shot Chart Detail,0021500675,483,201578,Marreese Speights,1610612744,Golden State Warriors,4,6,21,Made Shot,Jump Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,15,26,1,1
+206,Shot Chart Detail,0021500675,535,201578,Marreese Speights,1610612744,Golden State Warriors,4,1,14,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,24,-19,244,1,1
+207,Shot Chart Detail,0021500675,547,201578,Marreese Speights,1610612744,Golden State Warriors,4,0,25,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,26,99,247,1,1
+208,Shot Chart Detail,0021500691,85,201578,Marreese Speights,1610612744,Golden State Warriors,1,3,22,Missed Shot,Jump Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,-17,26,1,0
+209,Shot Chart Detail,0021500691,100,201578,Marreese Speights,1610612744,Golden State Warriors,1,2,4,Made Shot,Floating Jump shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,6,-34,61,1,1
+210,Shot Chart Detail,0021500691,112,201578,Marreese Speights,1610612744,Golden State Warriors,1,0,8,Made Shot,Turnaround Hook Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),8-16 ft.,8,-32,77,1,1
+211,Shot Chart Detail,0021500691,346,201578,Marreese Speights,1610612744,Golden State Warriors,4,11,1,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),8-16 ft.,14,123,70,1,0
+212,Shot Chart Detail,0021500691,352,201578,Marreese Speights,1610612744,Golden State Warriors,4,10,31,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,10,13,1,0
+213,Shot Chart Detail,0021500691,353,201578,Marreese Speights,1610612744,Golden State Warriors,4,10,30,Missed Shot,Tip Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-10,4,1,0
+214,Shot Chart Detail,0021500691,367,201578,Marreese Speights,1610612744,Golden State Warriors,4,9,11,Made Shot,Driving Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+215,Shot Chart Detail,0021500691,462,201578,Marreese Speights,1610612744,Golden State Warriors,4,8,47,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,16,105,127,1,0
+216,Shot Chart Detail,0021500691,381,201578,Marreese Speights,1610612744,Golden State Warriors,4,7,42,Made Shot,Jump Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,20,23,1,1
+217,Shot Chart Detail,0021500707,124,201578,Marreese Speights,1610612744,Golden State Warriors,2,11,44,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-5,14,1,1
+218,Shot Chart Detail,0021500707,126,201578,Marreese Speights,1610612744,Golden State Warriors,2,11,13,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+219,Shot Chart Detail,0021500707,132,201578,Marreese Speights,1610612744,Golden State Warriors,2,10,43,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,19,-124,146,1,0
+220,Shot Chart Detail,0021500707,388,201578,Marreese Speights,1610612744,Golden State Warriors,4,10,51,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,20,-1,208,1,1
+221,Shot Chart Detail,0021500707,392,201578,Marreese Speights,1610612744,Golden State Warriors,4,10,1,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,10,21,1,0
+222,Shot Chart Detail,0021500707,395,201578,Marreese Speights,1610612744,Golden State Warriors,4,9,58,Missed Shot,Tip Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,4,3,1,0
+223,Shot Chart Detail,0021500707,397,201578,Marreese Speights,1610612744,Golden State Warriors,4,9,56,Missed Shot,Tip Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,-2,8,1,0
+224,Shot Chart Detail,0021500718,97,201578,Marreese Speights,1610612744,Golden State Warriors,1,2,22,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),8-16 ft.,11,112,11,1,0
+225,Shot Chart Detail,0021500718,114,201578,Marreese Speights,1610612744,Golden State Warriors,1,0,54,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,20,24,205,1,1
+226,Shot Chart Detail,0021500718,133,201578,Marreese Speights,1610612744,Golden State Warriors,2,10,44,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,20,43,205,1,0
+227,Shot Chart Detail,0021500718,498,201578,Marreese Speights,1610612744,Golden State Warriors,4,2,11,Made Shot,Jump Shot,3PT Field Goal,Left Corner 3,Left Side(L),24+ ft.,23,-237,-19,1,1
+228,Shot Chart Detail,0021500718,517,201578,Marreese Speights,1610612744,Golden State Warriors,4,0,40,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,25,-12,254,1,0
+229,Shot Chart Detail,0021500739,118,201578,Marreese Speights,1610612744,Golden State Warriors,1,1,13,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-12,-10,1,0
+230,Shot Chart Detail,0021500739,116,201578,Marreese Speights,1610612744,Golden State Warriors,1,1,13,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-4,-16,1,0
+231,Shot Chart Detail,0021500739,127,201578,Marreese Speights,1610612744,Golden State Warriors,1,0,25,Made Shot,Cutting Finger Roll Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,4,-1,1,1
+232,Shot Chart Detail,0021500739,133,201578,Marreese Speights,1610612744,Golden State Warriors,2,11,45,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,16,-14,160,1,0
+233,Shot Chart Detail,0021500739,143,201578,Marreese Speights,1610612744,Golden State Warriors,2,10,44,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),16-24 ft.,17,169,61,1,1
+234,Shot Chart Detail,0021500739,159,201578,Marreese Speights,1610612744,Golden State Warriors,2,8,48,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,20,125,164,1,1
+235,Shot Chart Detail,0021500739,164,201578,Marreese Speights,1610612744,Golden State Warriors,2,7,57,Missed Shot,Jump Shot,3PT Field Goal,Right Corner 3,Right Side(R),24+ ft.,23,233,16,1,0
+236,Shot Chart Detail,0021500739,473,201578,Marreese Speights,1610612744,Golden State Warriors,3,0,15,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,28,-7,288,1,0
+237,Shot Chart Detail,0021500739,484,201578,Marreese Speights,1610612744,Golden State Warriors,4,11,23,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,20,128,160,1,1
+238,Shot Chart Detail,0021500769,70,201578,Marreese Speights,1610612744,Golden State Warriors,1,4,37,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,18,-147,115,1,0
+239,Shot Chart Detail,0021500769,98,201578,Marreese Speights,1610612744,Golden State Warriors,1,2,55,Made Shot,Fadeaway Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,18,60,174,1,1
+240,Shot Chart Detail,0021500769,107,201578,Marreese Speights,1610612744,Golden State Warriors,1,1,57,Missed Shot,Fadeaway Jump Shot,2PT Field Goal,Mid-Range,Center(C),8-16 ft.,15,1,159,1,0
+241,Shot Chart Detail,0021500769,115,201578,Marreese Speights,1610612744,Golden State Warriors,1,0,58,Missed Shot,Alley Oop Layup shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,6,21,1,0
+242,Shot Chart Detail,0021500769,209,201578,Marreese Speights,1610612744,Golden State Warriors,2,5,50,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,10,16,1,1
+243,Shot Chart Detail,0021500769,212,201578,Marreese Speights,1610612744,Golden State Warriors,2,5,12,Made Shot,Turnaround Jump Shot,3PT Field Goal,Left Corner 3,Left Side(L),24+ ft.,23,-230,13,1,1
+244,Shot Chart Detail,0021500769,302,201578,Marreese Speights,1610612744,Golden State Warriors,3,9,46,Made Shot,Tip Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,0,23,1,1
+245,Shot Chart Detail,0021500769,310,201578,Marreese Speights,1610612744,Golden State Warriors,3,8,37,Made Shot,Pullup Jump shot,2PT Field Goal,Mid-Range,Right Side(R),16-24 ft.,16,153,56,1,1
+246,Shot Chart Detail,0021500769,316,201578,Marreese Speights,1610612744,Golden State Warriors,3,8,14,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,16,-16,169,1,0
+247,Shot Chart Detail,0021500769,350,201578,Marreese Speights,1610612744,Golden State Warriors,3,4,54,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,9,11,1,1
+248,Shot Chart Detail,0021500788,95,201578,Marreese Speights,1610612744,Golden State Warriors,1,1,53,Made Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,12,18,1,1
+249,Shot Chart Detail,0021500788,114,201578,Marreese Speights,1610612744,Golden State Warriors,1,0,29,Made Shot,Fadeaway Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,25,20,257,1,1
+250,Shot Chart Detail,0021500788,123,201578,Marreese Speights,1610612744,Golden State Warriors,2,11,27,Made Shot,Step Back Jump shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,16,-104,124,1,1
+251,Shot Chart Detail,0021500788,126,201578,Marreese Speights,1610612744,Golden State Warriors,2,11,3,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,24,38,242,1,0
+252,Shot Chart Detail,0021500788,157,201578,Marreese Speights,1610612744,Golden State Warriors,2,8,35,Made Shot,Fadeaway Jump Shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,17,-133,121,1,1
+253,Shot Chart Detail,0021500788,386,201578,Marreese Speights,1610612744,Golden State Warriors,3,4,29,Made Shot,Driving Finger Roll Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,-6,2,1,1
+254,Shot Chart Detail,0021500788,394,201578,Marreese Speights,1610612744,Golden State Warriors,3,3,45,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,18,115,149,1,0
+255,Shot Chart Detail,0021500788,428,201578,Marreese Speights,1610612744,Golden State Warriors,3,0,59,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,17,110,141,1,0
+256,Shot Chart Detail,0021500788,434,201578,Marreese Speights,1610612744,Golden State Warriors,3,0,20,Missed Shot,Turnaround Hook Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,4,28,31,1,0
+257,Shot Chart Detail,0021500799,109,201578,Marreese Speights,1610612744,Golden State Warriors,1,1,9,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,16,66,151,1,0
+258,Shot Chart Detail,0021500799,113,201578,Marreese Speights,1610612744,Golden State Warriors,1,0,43,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,25,25,252,1,0
+259,Shot Chart Detail,0021500799,128,201578,Marreese Speights,1610612744,Golden State Warriors,2,11,28,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,18,-109,149,1,1
+260,Shot Chart Detail,0021500799,148,201578,Marreese Speights,1610612744,Golden State Warriors,2,9,51,Missed Shot,Turnaround Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,6,-63,21,1,0
+261,Shot Chart Detail,0021500799,255,201578,Marreese Speights,1610612744,Golden State Warriors,2,0,42,Made Shot,Tip Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,-32,7,1,1
+262,Shot Chart Detail,0021500799,404,201578,Marreese Speights,1610612744,Golden State Warriors,4,11,44,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,21,-166,139,1,0
+263,Shot Chart Detail,0021500799,468,201578,Marreese Speights,1610612744,Golden State Warriors,4,7,3,Made Shot,Running Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,6,0,1,1
+264,Shot Chart Detail,0021500799,486,201578,Marreese Speights,1610612744,Golden State Warriors,4,6,12,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,25,48,247,1,0
+265,Shot Chart Detail,0021500799,499,201578,Marreese Speights,1610612744,Golden State Warriors,4,5,20,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),16-24 ft.,18,181,36,1,0
+266,Shot Chart Detail,0021500799,517,201578,Marreese Speights,1610612744,Golden State Warriors,4,3,50,Made Shot,Running Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+267,Shot Chart Detail,0021500815,82,201578,Marreese Speights,1610612744,Golden State Warriors,1,3,11,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,9,2,1,0
+268,Shot Chart Detail,0021500815,104,201578,Marreese Speights,1610612744,Golden State Warriors,1,1,25,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,19,-91,169,1,0
+269,Shot Chart Detail,0021500815,112,201578,Marreese Speights,1610612744,Golden State Warriors,1,0,37,Made Shot,Cutting Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,1,13,1,1
+270,Shot Chart Detail,0021500815,141,201578,Marreese Speights,1610612744,Golden State Warriors,2,9,51,Missed Shot,Jump Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,33,3,1,0
+271,Shot Chart Detail,0021500815,146,201578,Marreese Speights,1610612744,Golden State Warriors,2,9,48,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),16-24 ft.,17,177,11,1,1
+272,Shot Chart Detail,0021500815,149,201578,Marreese Speights,1610612744,Golden State Warriors,2,9,21,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,17,4,174,1,0
+273,Shot Chart Detail,0021500815,423,201578,Marreese Speights,1610612744,Golden State Warriors,4,9,14,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,24,143,203,1,0
+274,Shot Chart Detail,0021500815,440,201578,Marreese Speights,1610612744,Golden State Warriors,4,8,1,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,1,7,1,0
+275,Shot Chart Detail,0021500822,143,201578,Marreese Speights,1610612744,Golden State Warriors,2,10,8,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,21,17,214,1,0
+276,Shot Chart Detail,0021500822,164,201578,Marreese Speights,1610612744,Golden State Warriors,2,8,4,Made Shot,Cutting Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+277,Shot Chart Detail,0021500822,394,201578,Marreese Speights,1610612744,Golden State Warriors,4,11,25,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,16,86,144,1,0
+278,Shot Chart Detail,0021500822,400,201578,Marreese Speights,1610612744,Golden State Warriors,4,10,42,Made Shot,Hook Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-4,26,1,1
+279,Shot Chart Detail,0021500836,112,201578,Marreese Speights,1610612744,Golden State Warriors,2,11,38,Missed Shot,Pullup Jump shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,18,35,185,1,0
+280,Shot Chart Detail,0021500836,117,201578,Marreese Speights,1610612744,Golden State Warriors,2,10,39,Missed Shot,Driving Reverse Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-11,-5,1,0
+281,Shot Chart Detail,0021500836,126,201578,Marreese Speights,1610612744,Golden State Warriors,2,9,56,Made Shot,Cutting Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,-7,-1,1,1
+282,Shot Chart Detail,0021500836,132,201578,Marreese Speights,1610612744,Golden State Warriors,2,8,47,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,20,76,188,1,0
+283,Shot Chart Detail,0021500855,155,201578,Marreese Speights,1610612744,Golden State Warriors,2,10,38,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,16,-130,97,1,1
+284,Shot Chart Detail,0021500855,172,201578,Marreese Speights,1610612744,Golden State Warriors,2,9,8,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,17,-73,160,1,1
+285,Shot Chart Detail,0021500855,188,201578,Marreese Speights,1610612744,Golden State Warriors,2,7,54,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,19,99,170,1,1
+286,Shot Chart Detail,0021500855,191,201578,Marreese Speights,1610612744,Golden State Warriors,2,7,18,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,17,-135,105,1,0
+287,Shot Chart Detail,0021500855,426,201578,Marreese Speights,1610612744,Golden State Warriors,4,11,40,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,19,-73,183,1,1
+288,Shot Chart Detail,0021500855,436,201578,Marreese Speights,1610612744,Golden State Warriors,4,10,56,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,19,101,170,1,1
+289,Shot Chart Detail,0021500855,438,201578,Marreese Speights,1610612744,Golden State Warriors,4,10,7,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,20,105,175,1,1
+290,Shot Chart Detail,0021500855,446,201578,Marreese Speights,1610612744,Golden State Warriors,4,8,56,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,21,125,169,1,0
+291,Shot Chart Detail,0021500874,155,201578,Marreese Speights,1610612744,Golden State Warriors,2,7,0,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),8-16 ft.,15,158,13,1,0
+292,Shot Chart Detail,0021500874,174,201578,Marreese Speights,1610612744,Golden State Warriors,2,5,17,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,25,2,1,1
+293,Shot Chart Detail,0021500874,286,201578,Marreese Speights,1610612744,Golden State Warriors,3,6,28,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,18,14,185,1,1
+294,Shot Chart Detail,0021500874,312,201578,Marreese Speights,1610612744,Golden State Warriors,3,4,52,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,17,123,131,1,1
+295,Shot Chart Detail,0021500874,335,201578,Marreese Speights,1610612744,Golden State Warriors,3,3,35,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-9,-6,1,1
+296,Shot Chart Detail,0021500874,363,201578,Marreese Speights,1610612744,Golden State Warriors,3,1,33,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,2,13,1,0
+297,Shot Chart Detail,0021500874,370,201578,Marreese Speights,1610612744,Golden State Warriors,3,0,34,Missed Shot,Pullup Jump shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,18,-81,169,1,0
+298,Shot Chart Detail,0021500895,88,201578,Marreese Speights,1610612744,Golden State Warriors,1,3,35,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,17,101,144,1,0
+299,Shot Chart Detail,0021500895,104,201578,Marreese Speights,1610612744,Golden State Warriors,1,2,0,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,15,18,1,1
+300,Shot Chart Detail,0021500895,359,201578,Marreese Speights,1610612744,Golden State Warriors,3,0,31,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,9,16,1,0
+301,Shot Chart Detail,0021500895,368,201578,Marreese Speights,1610612744,Golden State Warriors,4,11,32,Missed Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-17,23,1,0
+302,Shot Chart Detail,0021500895,372,201578,Marreese Speights,1610612744,Golden State Warriors,4,11,14,Missed Shot,Turnaround Hook Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,-27,16,1,0
+303,Shot Chart Detail,0021500895,382,201578,Marreese Speights,1610612744,Golden State Warriors,4,10,11,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,25,58,244,1,1
+304,Shot Chart Detail,0021500895,387,201578,Marreese Speights,1610612744,Golden State Warriors,4,9,11,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,25,24,257,1,1
+305,Shot Chart Detail,0021500895,399,201578,Marreese Speights,1610612744,Golden State Warriors,4,7,38,Missed Shot,Turnaround Fadeaway shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,16,-130,101,1,0
+306,Shot Chart Detail,0021500911,143,201578,Marreese Speights,1610612744,Golden State Warriors,2,10,11,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,17,-115,129,1,1
+307,Shot Chart Detail,0021500911,157,201578,Marreese Speights,1610612744,Golden State Warriors,2,8,9,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,26,-178,203,1,1
+308,Shot Chart Detail,0021500911,174,201578,Marreese Speights,1610612744,Golden State Warriors,2,6,49,Missed Shot,Driving Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,3,1,0
+309,Shot Chart Detail,0021500911,340,201578,Marreese Speights,1610612744,Golden State Warriors,3,2,35,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,18,-94,164,1,1
+310,Shot Chart Detail,0021500911,380,201578,Marreese Speights,1610612744,Golden State Warriors,4,11,15,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,25,101,232,1,1
+311,Shot Chart Detail,0021500931,155,201578,Marreese Speights,1610612744,Golden State Warriors,2,9,51,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,17,89,151,1,0
+312,Shot Chart Detail,0021500931,160,201578,Marreese Speights,1610612744,Golden State Warriors,2,8,46,Missed Shot,Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,4,30,38,1,0
+313,Shot Chart Detail,0021500931,189,201578,Marreese Speights,1610612744,Golden State Warriors,2,5,43,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,24,2,1,1
+314,Shot Chart Detail,0021500931,485,201578,Marreese Speights,1610612744,Golden State Warriors,4,4,13,Missed Shot,Tip Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,4,18,1,0
+315,Shot Chart Detail,0021500931,502,201578,Marreese Speights,1610612744,Golden State Warriors,4,2,38,Missed Shot,Step Back Jump shot,2PT Field Goal,Mid-Range,Right Side(R),16-24 ft.,19,192,-11,1,0
+316,Shot Chart Detail,0021500943,111,201578,Marreese Speights,1610612744,Golden State Warriors,1,1,20,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,26,-109,237,1,0
+317,Shot Chart Detail,0021500943,164,201578,Marreese Speights,1610612744,Golden State Warriors,2,9,26,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),16-24 ft.,17,166,56,1,0
+318,Shot Chart Detail,0021500958,139,201578,Marreese Speights,1610612744,Golden State Warriors,2,9,16,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,25,6,257,1,0
+319,Shot Chart Detail,0021500958,152,201578,Marreese Speights,1610612744,Golden State Warriors,2,8,16,Made Shot,Pullup Jump shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,21,24,210,1,1
+320,Shot Chart Detail,0021500958,154,201578,Marreese Speights,1610612744,Golden State Warriors,2,7,47,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+321,Shot Chart Detail,0021500958,157,201578,Marreese Speights,1610612744,Golden State Warriors,2,7,21,Made Shot,Floating Jump shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,4,2,46,1,1
+322,Shot Chart Detail,0021500958,302,201578,Marreese Speights,1610612744,Golden State Warriors,3,3,44,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,18,69,169,1,1
+323,Shot Chart Detail,0021500958,333,201578,Marreese Speights,1610612744,Golden State Warriors,3,1,11,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,25,-209,149,1,1
+324,Shot Chart Detail,0021500958,357,201578,Marreese Speights,1610612744,Golden State Warriors,4,11,44,Made Shot,Fadeaway Jump Shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,17,-137,110,1,1
+325,Shot Chart Detail,0021500958,370,201578,Marreese Speights,1610612744,Golden State Warriors,4,10,29,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,29,-199,214,1,0
+326,Shot Chart Detail,0021500958,485,201578,Marreese Speights,1610612744,Golden State Warriors,4,1,39,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),16-24 ft.,16,151,75,1,0
+327,Shot Chart Detail,0021500958,487,201578,Marreese Speights,1610612744,Golden State Warriors,4,1,36,Missed Shot,Jump Shot,3PT Field Goal,Right Corner 3,Right Side(R),24+ ft.,23,233,-11,1,0
+328,Shot Chart Detail,0021500971,115,201578,Marreese Speights,1610612744,Golden State Warriors,1,0,4,Missed Shot,Jump Shot,3PT Field Goal,Left Corner 3,Left Side(L),24+ ft.,22,-228,11,1,0
+329,Shot Chart Detail,0021500971,123,201578,Marreese Speights,1610612744,Golden State Warriors,2,11,45,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,19,99,165,1,0
+330,Shot Chart Detail,0021500971,548,201578,Marreese Speights,1610612744,Golden State Warriors,4,0,34,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,28,159,237,1,0
+331,Shot Chart Detail,0021500981,104,201578,Marreese Speights,1610612744,Golden State Warriors,1,1,42,Made Shot,Pullup Jump shot,2PT Field Goal,Mid-Range,Right Side(R),16-24 ft.,16,161,7,1,1
+332,Shot Chart Detail,0021500981,122,201578,Marreese Speights,1610612744,Golden State Warriors,2,11,26,Made Shot,Turnaround Jump Shot,2PT Field Goal,In The Paint (Non-RA),Left Side(L),8-16 ft.,10,-73,70,1,1
+333,Shot Chart Detail,0021500981,134,201578,Marreese Speights,1610612744,Golden State Warriors,2,10,37,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),16-24 ft.,17,145,97,1,1
+334,Shot Chart Detail,0021500981,140,201578,Marreese Speights,1610612744,Golden State Warriors,2,10,6,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,17,14,170,1,0
+335,Shot Chart Detail,0021500981,363,201578,Marreese Speights,1610612744,Golden State Warriors,3,3,42,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,17,69,156,1,0
+336,Shot Chart Detail,0021500981,375,201578,Marreese Speights,1610612744,Golden State Warriors,3,3,2,Made Shot,Tip Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-2,18,1,1
+337,Shot Chart Detail,0021500981,386,201578,Marreese Speights,1610612744,Golden State Warriors,3,1,52,Made Shot,Turnaround Hook Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,6,-22,56,1,1
+338,Shot Chart Detail,0021500981,388,201578,Marreese Speights,1610612744,Golden State Warriors,3,1,8,Missed Shot,Turnaround Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,16,97,139,1,0
+339,Shot Chart Detail,0021500981,417,201578,Marreese Speights,1610612744,Golden State Warriors,4,11,43,Made Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,12,16,1,1
+340,Shot Chart Detail,0021500981,420,201578,Marreese Speights,1610612744,Golden State Warriors,4,11,24,Made Shot,Pullup Jump shot,2PT Field Goal,Mid-Range,Right Side(R),16-24 ft.,17,176,2,1,1
+341,Shot Chart Detail,0021500981,432,201578,Marreese Speights,1610612744,Golden State Warriors,4,9,49,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,19,-115,154,1,1
+342,Shot Chart Detail,0021500981,442,201578,Marreese Speights,1610612744,Golden State Warriors,4,8,53,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,16,99,136,1,1
+343,Shot Chart Detail,0021500981,465,201578,Marreese Speights,1610612744,Golden State Warriors,4,7,5,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,24,-65,239,1,0
+344,Shot Chart Detail,0021500981,493,201578,Marreese Speights,1610612744,Golden State Warriors,4,4,47,Made Shot,Driving Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+345,Shot Chart Detail,0021500996,62,201578,Marreese Speights,1610612744,Golden State Warriors,1,5,8,Made Shot,Turnaround Fadeaway shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,16,127,110,1,1
+346,Shot Chart Detail,0021500996,93,201578,Marreese Speights,1610612744,Golden State Warriors,1,0,45,Missed Shot,Jump Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,-4,33,1,0
+347,Shot Chart Detail,0021500996,95,201578,Marreese Speights,1610612744,Golden State Warriors,1,0,44,Missed Shot,Putback Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-4,26,1,0
+348,Shot Chart Detail,0021500996,105,201578,Marreese Speights,1610612744,Golden State Warriors,1,0,42,Missed Shot,Tip Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-12,9,1,0
+349,Shot Chart Detail,0021500996,97,201578,Marreese Speights,1610612744,Golden State Warriors,1,0,41,Missed Shot,Putback Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-6,15,1,0
+350,Shot Chart Detail,0021500996,421,201578,Marreese Speights,1610612744,Golden State Warriors,4,11,19,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),16-24 ft.,17,143,95,1,1
+351,Shot Chart Detail,0021500996,424,201578,Marreese Speights,1610612744,Golden State Warriors,4,10,47,Made Shot,Fadeaway Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),16-24 ft.,16,158,51,1,1
+352,Shot Chart Detail,0021500996,426,201578,Marreese Speights,1610612744,Golden State Warriors,4,10,1,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,18,143,124,1,1
+353,Shot Chart Detail,0021500996,489,201578,Marreese Speights,1610612744,Golden State Warriors,4,4,9,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,16,-2,165,1,0
+354,Shot Chart Detail,0021500996,520,201578,Marreese Speights,1610612744,Golden State Warriors,4,2,3,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,24,-34,244,1,1
+355,Shot Chart Detail,0021500996,527,201578,Marreese Speights,1610612744,Golden State Warriors,4,1,7,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,26,12,262,1,0
+356,Shot Chart Detail,0021501011,90,201578,Marreese Speights,1610612744,Golden State Warriors,1,3,2,Made Shot,Running Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-6,26,1,1
+357,Shot Chart Detail,0021501011,108,201578,Marreese Speights,1610612744,Golden State Warriors,1,0,39,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,25,-32,249,1,1
+358,Shot Chart Detail,0021501011,117,201578,Marreese Speights,1610612744,Golden State Warriors,2,11,45,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,25,84,237,1,1
+359,Shot Chart Detail,0021501011,129,201578,Marreese Speights,1610612744,Golden State Warriors,2,10,8,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,24,-45,244,1,0
+360,Shot Chart Detail,0021501011,351,201578,Marreese Speights,1610612744,Golden State Warriors,4,10,32,Missed Shot,Driving Finger Roll Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,4,21,1,0
+361,Shot Chart Detail,0021501011,362,201578,Marreese Speights,1610612744,Golden State Warriors,4,9,34,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,29,158,247,1,1
+362,Shot Chart Detail,0021501011,368,201578,Marreese Speights,1610612744,Golden State Warriors,4,8,38,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,25,148,210,1,0
+363,Shot Chart Detail,0021501011,443,201578,Marreese Speights,1610612744,Golden State Warriors,4,2,14,Missed Shot,Turnaround Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),16-24 ft.,16,153,56,1,0
+364,Shot Chart Detail,0021501026,77,201578,Marreese Speights,1610612744,Golden State Warriors,1,4,19,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Center(C),8-16 ft.,15,12,151,1,1
+365,Shot Chart Detail,0021501026,93,201578,Marreese Speights,1610612744,Golden State Warriors,1,3,9,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,19,-47,193,1,1
+366,Shot Chart Detail,0021501026,109,201578,Marreese Speights,1610612744,Golden State Warriors,1,1,44,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,24,141,203,1,1
+367,Shot Chart Detail,0021501026,138,201578,Marreese Speights,1610612744,Golden State Warriors,2,10,52,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),16-24 ft.,17,169,46,1,1
+368,Shot Chart Detail,0021501026,150,201578,Marreese Speights,1610612744,Golden State Warriors,2,10,4,Missed Shot,Turnaround Fadeaway shot,2PT Field Goal,In The Paint (Non-RA),Left Side(L),8-16 ft.,10,-71,72,1,0
+369,Shot Chart Detail,0021501026,393,201578,Marreese Speights,1610612744,Golden State Warriors,3,4,30,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,24,197,149,1,0
+370,Shot Chart Detail,0021501026,433,201578,Marreese Speights,1610612744,Golden State Warriors,3,0,53,Made Shot,Driving Bank shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,38,11,1,1
+371,Shot Chart Detail,0021501026,568,201578,Marreese Speights,1610612744,Golden State Warriors,4,0,20,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,19,159,121,1,1
+372,Shot Chart Detail,0021501036,77,201578,Marreese Speights,1610612744,Golden State Warriors,1,3,39,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side(L),16-24 ft.,17,-171,0,1,0
+373,Shot Chart Detail,0021501036,105,201578,Marreese Speights,1610612744,Golden State Warriors,1,1,25,Missed Shot,Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,5,48,16,1,0
+374,Shot Chart Detail,0021501036,129,201578,Marreese Speights,1610612744,Golden State Warriors,2,11,39,Made Shot,Turnaround Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),16-24 ft.,16,155,46,1,1
+375,Shot Chart Detail,0021501036,364,201578,Marreese Speights,1610612744,Golden State Warriors,4,11,32,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,19,60,183,1,1
+376,Shot Chart Detail,0021501036,370,201578,Marreese Speights,1610612744,Golden State Warriors,4,10,25,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),8-16 ft.,14,140,16,1,0
+377,Shot Chart Detail,0021501036,378,201578,Marreese Speights,1610612744,Golden State Warriors,4,9,46,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,17,-6,178,1,0
+378,Shot Chart Detail,0021501050,71,201578,Marreese Speights,1610612744,Golden State Warriors,1,3,17,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,20,-160,121,1,1
+379,Shot Chart Detail,0021501050,116,201578,Marreese Speights,1610612744,Golden State Warriors,2,11,45,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,19,1,198,1,1
+380,Shot Chart Detail,0021501050,126,201578,Marreese Speights,1610612744,Golden State Warriors,2,11,8,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),8-16 ft.,11,112,-1,1,1
+381,Shot Chart Detail,0021501050,145,201578,Marreese Speights,1610612744,Golden State Warriors,2,9,28,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,17,-81,160,1,0
+382,Shot Chart Detail,0021501050,149,201578,Marreese Speights,1610612744,Golden State Warriors,2,9,19,Made Shot,Tip Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+383,Shot Chart Detail,0021501050,433,201578,Marreese Speights,1610612744,Golden State Warriors,4,9,10,Missed Shot,Fadeaway Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),16-24 ft.,20,169,111,1,0
+384,Shot Chart Detail,0021501066,86,201578,Marreese Speights,1610612744,Golden State Warriors,1,2,58,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,27,-84,257,1,0
+385,Shot Chart Detail,0021501066,104,201578,Marreese Speights,1610612744,Golden State Warriors,1,1,29,Missed Shot,Hook Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,4,12,43,1,0
+386,Shot Chart Detail,0021501066,136,201578,Marreese Speights,1610612744,Golden State Warriors,2,10,49,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,26,-86,252,1,1
+387,Shot Chart Detail,0021501066,138,201578,Marreese Speights,1610612744,Golden State Warriors,2,10,19,Missed Shot,Driving Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,10,11,1,0
+388,Shot Chart Detail,0021501066,405,201578,Marreese Speights,1610612744,Golden State Warriors,4,11,19,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,25,6,257,1,0
+389,Shot Chart Detail,0021501066,443,201578,Marreese Speights,1610612744,Golden State Warriors,4,9,39,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-13,19,1,0
+390,Shot Chart Detail,0021501080,131,201578,Marreese Speights,1610612744,Golden State Warriors,2,10,46,Missed Shot,Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),8-16 ft.,12,-2,124,1,0
+391,Shot Chart Detail,0021501080,136,201578,Marreese Speights,1610612744,Golden State Warriors,2,10,14,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,25,-204,154,1,1
+392,Shot Chart Detail,0021501080,159,201578,Marreese Speights,1610612744,Golden State Warriors,2,7,9,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,25,-174,188,1,0
+393,Shot Chart Detail,0021501080,414,201578,Marreese Speights,1610612744,Golden State Warriors,4,9,5,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,17,-50,164,1,0
+394,Shot Chart Detail,0021501094,107,201578,Marreese Speights,1610612744,Golden State Warriors,1,1,33,Made Shot,Tip Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-11,23,1,1
+395,Shot Chart Detail,0021501094,119,201578,Marreese Speights,1610612744,Golden State Warriors,1,0,46,Made Shot,Tip Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,-4,7,1,1
+396,Shot Chart Detail,0021501094,131,201578,Marreese Speights,1610612744,Golden State Warriors,2,11,24,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,25,40,252,1,1
+397,Shot Chart Detail,0021501094,155,201578,Marreese Speights,1610612744,Golden State Warriors,2,8,16,Made Shot,Turnaround Hook Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,6,-17,61,1,1
+398,Shot Chart Detail,0021501094,162,201578,Marreese Speights,1610612744,Golden State Warriors,2,7,43,Made Shot,Driving Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+399,Shot Chart Detail,0021501094,174,201578,Marreese Speights,1610612744,Golden State Warriors,2,6,47,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,26,-184,185,1,1
+400,Shot Chart Detail,0021501094,329,201578,Marreese Speights,1610612744,Golden State Warriors,3,4,4,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),8-16 ft.,15,156,16,1,0
+401,Shot Chart Detail,0021501094,359,201578,Marreese Speights,1610612744,Golden State Warriors,3,1,8,Made Shot,Driving Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+402,Shot Chart Detail,0021501094,375,201578,Marreese Speights,1610612744,Golden State Warriors,4,11,39,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Center(C),24+ ft.,25,-9,252,1,0
+403,Shot Chart Detail,0021501094,415,201578,Marreese Speights,1610612744,Golden State Warriors,4,7,45,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,17,-40,174,1,0
+404,Shot Chart Detail,0021501112,141,201578,Marreese Speights,1610612744,Golden State Warriors,2,11,19,Made Shot,Jump Bank Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,5,43,31,1,1
+405,Shot Chart Detail,0021501112,160,201578,Marreese Speights,1610612744,Golden State Warriors,2,9,39,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),8-16 ft.,9,91,18,1,0
+406,Shot Chart Detail,0021501112,167,201578,Marreese Speights,1610612744,Golden State Warriors,2,9,2,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,18,-119,139,1,0
+407,Shot Chart Detail,0021501112,176,201578,Marreese Speights,1610612744,Golden State Warriors,2,8,3,Made Shot,Hook Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,4,-35,33,1,1
+408,Shot Chart Detail,0021501112,181,201578,Marreese Speights,1610612744,Golden State Warriors,2,7,16,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,26,119,237,1,0
+409,Shot Chart Detail,0021501112,418,201578,Marreese Speights,1610612744,Golden State Warriors,4,8,36,Missed Shot,Fadeaway Jump Shot,2PT Field Goal,Mid-Range,Center(C),16-24 ft.,18,46,175,1,0
+410,Shot Chart Detail,0021501112,434,201578,Marreese Speights,1610612744,Golden State Warriors,4,7,29,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+411,Shot Chart Detail,0021501119,125,201578,Marreese Speights,1610612744,Golden State Warriors,2,9,59,Missed Shot,Hook Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,6,-35,56,1,0
+412,Shot Chart Detail,0021501119,151,201578,Marreese Speights,1610612744,Golden State Warriors,2,8,3,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side(R),16-24 ft.,19,199,-1,1,1
+413,Shot Chart Detail,0021501119,157,201578,Marreese Speights,1610612744,Golden State Warriors,2,7,31,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,24,-222,106,1,0
+414,Shot Chart Detail,0021501119,380,201578,Marreese Speights,1610612744,Golden State Warriors,4,10,22,Made Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-19,2,1,1
+415,Shot Chart Detail,0021501136,141,201578,Marreese Speights,1610612744,Golden State Warriors,2,10,25,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,18,130,129,1,0
+416,Shot Chart Detail,0021501136,150,201578,Marreese Speights,1610612744,Golden State Warriors,2,9,9,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Right Side Center(RC),16-24 ft.,18,135,131,1,0
+417,Shot Chart Detail,0021501136,164,201578,Marreese Speights,1610612744,Golden State Warriors,2,7,58,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-9,16,1,0
+418,Shot Chart Detail,0021501136,196,201578,Marreese Speights,1610612744,Golden State Warriors,2,5,19,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,25,166,188,1,1
+419,Shot Chart Detail,0021501136,397,201578,Marreese Speights,1610612744,Golden State Warriors,4,10,29,Missed Shot,Turnaround Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),8-16 ft.,10,-2,100,1,0
+420,Shot Chart Detail,0021501136,410,201578,Marreese Speights,1610612744,Golden State Warriors,4,8,13,Made Shot,Driving Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,1,1,1
+421,Shot Chart Detail,0021501152,133,201578,Marreese Speights,1610612744,Golden State Warriors,2,11,46,Made Shot,Jump Shot,2PT Field Goal,Mid-Range,Left Side Center(LC),16-24 ft.,17,-117,134,1,1
+422,Shot Chart Detail,0021501152,139,201578,Marreese Speights,1610612744,Golden State Warriors,2,11,8,Missed Shot,Jump Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,3,9,33,1,0
+423,Shot Chart Detail,0021501152,173,201578,Marreese Speights,1610612744,Golden State Warriors,2,7,37,Missed Shot,Fadeaway Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),8-16 ft.,11,-1,116,1,0
+424,Shot Chart Detail,0021501152,219,201578,Marreese Speights,1610612744,Golden State Warriors,2,6,52,Missed Shot,Tip Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,3,9,1,0
+425,Shot Chart Detail,0021501152,420,201578,Marreese Speights,1610612744,Golden State Warriors,4,9,21,Missed Shot,Jump Shot,3PT Field Goal,Above the Break 3,Left Side Center(LC),24+ ft.,25,-106,228,1,0
+426,Shot Chart Detail,0021501152,522,201578,Marreese Speights,1610612744,Golden State Warriors,4,0,35,Made Shot,Jump Shot,3PT Field Goal,Above the Break 3,Right Side Center(RC),24+ ft.,26,169,208,1,1
