@@ -180,28 +180,35 @@
       <div class="row">
         <div class="col-md-12 center">
           <span id="tableName" class="titletext"></span>
-          <table class="table" id="vis3table">
-          <tr>
-            <td>Name</td>
-            <td><span id="curryName"></span></td>
-            <td><span id="compareName"></span></td>
-          </tr>
-          <tr>
-            <td>TSP</td>
-            <td><span id="curryTSP"></span></td>
-            <td><span id="compareTSP"></span></td>
-          </tr>
-          <tr>
-            <td>Shots / 36 Min</td>
-            <td><span id="curryShotsPer"></span></td>
-            <td><span id="compareShotsPer"></span></td>
-          </tr>
-          <tr>
-            <td>Min Played</td>
-            <td><span id="curryMinutes"></span></td>
-            <td><span id="compareMinutes"></span></td>
-          </tr>
-          </table>
+          <div class="row">
+            <div class="col-md-1 col-md-offset-2">
+              <svg width="100", height="100">
+                <circle cx=50 cy=50 r=40 fill=orange></circle>
+              </svg>
+            </div>
+            <div class="col-md-3 left">
+              <div class="viz3content">
+                <span id="curryName"></span><br />
+                <b>TSP:</b> <span id="curryTSP"></span><br />
+                <b>Shots / 36 Min:</b> <span id="curryShotsPer"></span><br />
+                <b>Min Played:</b> <span id="curryMinutes"></span><br />
+              </div>
+            </div>
+            <div class="col-md-1 col-md-offset-1">
+              <svg width="100", height="100">
+                <circle cx=50 cy=50 r=40 fill=green></circle>
+              </svg>
+            </div>
+            <div class="col-md-3 left">
+              <div class="viz3content">
+                <span id="compareName"></span><br />
+                <b>TSP:</b> <span id="compareTSP"></span><br />
+                <b>Shots / 36 Min:</b> <span id="compareShotsPer"></span><br />
+                <b>Min Played:</b> <span id="compareMinutes"></span><br />
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
     </div>

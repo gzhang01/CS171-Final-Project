@@ -16,6 +16,15 @@
 	text-align: center;
 }
 
+.left {
+	text-align: left;
+}
+
+.viz3content {
+	margin-top: 15px;
+	margin-left: 20px;
+}
+
 tr td:first-child {
 	font-weight: bold;
 }
