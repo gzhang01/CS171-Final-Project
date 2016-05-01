@@ -17,6 +17,15 @@ body{
   line-height: 1.7;
 }
 
+.vis-subtext{
+  padding-top: 15px;
+  margin: auto;
+  font-size:12px;
+  text-align: center;
+  width: 75%;
+  text-align: left;
+}
+
 /* Scroll Down Button */
 #scroll-arrow a {
   padding-top: 70px;
