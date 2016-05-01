@@ -1,5 +1,41 @@
 CS171 Final Project
+Michael Woo, George Zhang, Jeffrey Zhao
 Harvard University
 Spring 2016
 
-Analyzing the Golden State Warrior's Historic Season
+Analyzing the Golden State Warriors Historic Season
+
+KEY INFORMATION
+The project is live at gzhang01.github.io/CS171-Final-Project
+The screencast is available at gzhang01.github.io/CS171-Final-Project/#screencast
+The process book is available within this directory (ProcessBookFinal.pdf) or online at gzhang01.github.io/CS171-Final-Project/ProcessBookFinal.pdf
+
+CODE
+The following files within this directory are our code:
+- css/ (all except for bootstrap.min.css)
+- js/
+    - main.js
+    - vis_one.js
+    - viz1main.js
+    - vis2.js
+    - viz3.js
+    - viz3main.js
+- index.html
+
+LIBRARIES
+The following files within this directory are libraries:
+- css/bootstrap.min.css
+- js/
+    - bootstrap.min.js
+    - d3.min.js
+    - d3.tip.js
+    - jquery.min.js
+    - math.min.js
+
+SCRIPTS
+The following are scripts we used for data preprocessing
+- scripts/joincsv.py
+- scraipts/nbastats_scraping.ipyng
+
+DATA
+All data used is found in the data/ directory
