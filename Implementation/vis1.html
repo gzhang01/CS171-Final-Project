@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CS171 - Final Project</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/viz1style.css">
+</head>
+<body>
+
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-8">
+                <h1>League-wide 3 Point Shooting</h1>
+                <!-- Visualization placeholders -->
+                <div id="visOne"></div>
+            </div>
+            <div class="col-md-4 center">
+                <table class="table table-borderless">
+                    <tbody id="table-body">
+                    <tr id="seasonRow">
+                        <td>Season</td>
+                        <td><span id="seasonOne"></span></td>
+                        <td><span id="seasonTwo"></span></td>
+                        <td><span id="seasonComp"></span></td>
+
+                    </tr>
+                    <tr id="fgRow">
+                        <td>Field Goals</td>
+                        <td><span id="fgOne"></span></td>
+                        <td><span id="fgTwo"></span></td>
+                        <td><span id="fgComp"></span></td>
+                    </tr>
+                    <tr id="fgaRow">
+                        <td>Field Goals Attempted</td>
+                        <td><span id="fgaOne"></span></td>
+                        <td><span id="fgaTwo"></span></td>
+                        <td><span id="fgaComp"></span></td>
+                    </tr>
+                    <tr id="3ptRow">
+                        <td>3-Pt Field Goals</td>
+                        <td><span id="3ptOne"></span></td>
+                        <td><span id="3ptTwo"></span></td>
+                        <td><span id="3ptComp"></span></td>
+                    </tr>
+                    <tr id="3ptaRow">
+                        <td>3-Pt Field Goals Attempted</td>
+                        <td><span id="3ptaOne"></span></td>
+                        <td><span id="3ptaTwo"></span></td>
+                        <td><span id="3ptaComp"></span></td>
+                    </tr>
+                    <tr id="2ptRow">
+                        <td>2-Pt Field Goals</td>
+                        <td><span id="2ptOne"></span></td>
+                        <td><span id="2ptTwo"></span></td>
+                        <td><span id="2ptComp"></span></td>
+                    </tr>
+                    <tr id="2ptaRow">
+                        <td>2-Pt Field Goals Attempted</td>
+                        <td><span id="2ptaOne"></span></td>
+                        <td><span id="2ptaTwo"></span></td>
+                        <td><span id="2ptaComp"></span></td>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- Load JS libraries: jQuery, bootstrap, D3, D3 tooltip -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/d3.min.js"></script>
+<script src="js/d3.tip.js"></script>
+
+<!-- Visualization objects -->
+<script src="js/vis_one.js"></script>
+
+<!-- Your implementation -->
+<script src="js/viz1main.js"></script>
+</body>
+</html>

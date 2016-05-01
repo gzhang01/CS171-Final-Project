@@ -1,0 +1,57 @@
+#viz3 {
+	margin: auto;
+}
+
+#vis3table {
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+.hover { 
+	cursor: pointer; 
+	cursor: hand; 
+}
+
+.center {
+	text-align: center;
+}
+
+.left {
+	text-align: left;
+}
+
+.viz3content {
+	margin-top: 15px;
+	margin-left: 20px;
+}
+
+tr td:first-child {
+	font-weight: bold;
+}
+
+.titletext {
+	text-anchor: middle;
+	font-size: 20px;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.x-axis text {
+    text-anchor: end;
+}
+
+.player_line {
+    fill: none;
+    stroke: #000;
+    stroke-width: 3;
+}
+
+.tooltip-object {
+    stroke: grey;
+    stroke-width: 2;
+}

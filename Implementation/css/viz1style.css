@@ -1,0 +1,50 @@
+.vis1 {
+    font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.axis .minor line {
+    stroke: gray;
+    stroke-dasharray: 3,4;
+}
+
+.x.axis path {
+    display: none;
+}
+
+.line {
+    fill: none;
+    stroke: #006BB6;
+    stroke-width: 1.4px;
+}
+
+.chart {
+    float: left;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-top: 0;
+    padding-left: 0;
+}
+
+.background {
+    fill: none;
+}
+
+.table {
+    margin-top: 80px;
+}
+
+/*
+.table-borderless tbody tr td, .table-borderless tbody tr th, .table-borderless thead tr th {
+    border: none;
+}*/
+
+td{
+    font-size: 12px;
+}
