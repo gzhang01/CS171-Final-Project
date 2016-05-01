@@ -12,6 +12,19 @@ body{
   margin-bottom: 25px;
 }
 
+.content-text{
+  font-size: large;
+  line-height: 1.7;
+}
+
+.vis-subtext{
+  padding-top: 15px;
+  margin: auto;
+  font-size:12px;
+  text-align: center;
+  width: 75%;
+  text-align: left;
+}
 
 /* Scroll Down Button */
 #scroll-arrow a {
@@ -99,6 +112,44 @@ a:hover {
   padding: 30px;
 }
 
+/*
+ * Header
+ */
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .masthead-nav {
+    padding-right: 100px;
+    float: right;
+  }
+}
 
 
 /*
@@ -116,10 +167,15 @@ a:hover {
 @media (min-width: 768px) {
   /* Pull out the header and footer */
   /* Start the vertical centering */
+  .masthead {
+    position: absolute;
+    top: 0;
+  }
   .site-wrapper-inner {
     vertical-align: middle;
   }
   /* Handle the widths */
+  .masthead,
   .cover-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
   }
@@ -127,6 +183,6 @@ a:hover {
 
 @media (min-width: 992px) {
   .cover-container {
-    width: 700px;
+    width: 1000px;
   }
 }
